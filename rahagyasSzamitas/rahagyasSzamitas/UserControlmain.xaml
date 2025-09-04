@@ -1,0 +1,57 @@
+﻿<UserControl x:Class="rahagyasSzamitas.UserControl1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:rahagyasSzamitas"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF1F2C2E"/>
+                <GradientStop Color="#FF1ECCC0" Offset="0.715"/>
+                <GradientStop Color="#FF88DDEB"/>
+                <GradientStop Color="#FF151F20"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid HorizontalAlignment="Left" Height="49" Margin="4,0,0,0" VerticalAlignment="Top" Width="796">
+            <Border BorderThickness="0">
+                <Button Content="kilépés" Margin="-1,0,737,0"/>
+            </Border>
+            <Border BorderThickness="1">
+                <Button Content="mentés" Margin="132,-1,580,1"/>
+            </Border>
+            <Border BorderThickness="1">
+                <Button Content="paraméterek megváltoztatása" Margin="287,0,334,0"/>
+            </Border>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="401" Margin="0,49,0,0" VerticalAlignment="Top" Width="325">
+            <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="59,42,0,0" VerticalAlignment="Top"/>
+            <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="59,62,0,0" VerticalAlignment="Top"/>
+            <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="59,82,0,0" VerticalAlignment="Top"/>
+            <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="59,102,0,0" VerticalAlignment="Top"/>
+            <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="59,122,0,0" VerticalAlignment="Top"/>
+            <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="59,142,0,0" VerticalAlignment="Top"/>
+            <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="59,162,0,0" VerticalAlignment="Top"/>
+            <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="59,0,0,0" VerticalAlignment="Center"/>
+            <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="59,213,0,0" VerticalAlignment="Top"/>
+            <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="59,233,0,0" VerticalAlignment="Top"/>
+            <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="59,253,0,0" VerticalAlignment="Top"/>
+            <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="59,287,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.455,-0.775"/>
+            <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="59,268,0,0" VerticalAlignment="Top"/>
+            <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="59,307,0,0" VerticalAlignment="Top"/>
+            <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="59,327,0,0" VerticalAlignment="Top"/>
+            <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="59,347,0,0" VerticalAlignment="Top"/>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="401" Margin="325,49,0,0" VerticalAlignment="Top" Width="475">
+            <TextBlock HorizontalAlignment="Left" Margin="-294,16,0,0" TextWrapping="Wrap" Text="válasza ki a IT -t" VerticalAlignment="Top" Height="21" Width="92" IsEnabled="False"/>
+            <TextBlock HorizontalAlignment="Left" Margin="93,51,0,0" TextWrapping="Wrap" Text="adja mega munkadarabb méreteit:" VerticalAlignment="Top"/>
+            <TextBox HorizontalAlignment="Left" Margin="238,183,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+            <RadioButton Content="hoszzz" HorizontalAlignment="Left" Margin="125,92,0,0" VerticalAlignment="Top"/>
+            <RadioButton x:Name="atméro" Content="átmérö" HorizontalAlignment="Left" Margin="125,125,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
+            <Label Content="méret:" HorizontalAlignment="Left" Margin="140,179,0,0" VerticalAlignment="Top" Width="88"/>
+        </Grid>
+
+    </Grid>
+</UserControl>
