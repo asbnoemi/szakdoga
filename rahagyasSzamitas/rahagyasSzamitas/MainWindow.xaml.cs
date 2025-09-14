@@ -9,6 +9,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
+
 namespace rahagyasSzamitas
 {
     /// <summary>
@@ -19,6 +21,9 @@ namespace rahagyasSzamitas
         public MainWindow()
         {
             InitializeComponent();
+
+            
+
         }
     }
 }

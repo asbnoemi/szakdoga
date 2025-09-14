@@ -4,12 +4,10 @@ C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\bin\D
 C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\bin\Debug\net8.0-windows\rahagyasSzamitas.dll
 C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\bin\Debug\net8.0-windows\rahagyasSzamitas.pdb
 C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\obj\Debug\net8.0-windows\MainWindow.g.cs
-C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\obj\Debug\net8.0-windows\UserControl1.g.cs
 C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\obj\Debug\net8.0-windows\App.g.cs
 C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\obj\Debug\net8.0-windows\rahagyasSzamitas_MarkupCompile.cache
 C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\obj\Debug\net8.0-windows\rahagyasSzamitas_MarkupCompile.lref
 C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\obj\Debug\net8.0-windows\MainWindow.baml
-C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\obj\Debug\net8.0-windows\UserControl1.baml
 C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\obj\Debug\net8.0-windows\rahagyasSzamitas.g.resources
 C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\obj\Debug\net8.0-windows\rahagyasSzamitas.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\obj\Debug\net8.0-windows\rahagyasSzamitas.AssemblyInfoInputs.cache
@@ -21,3 +19,12 @@ C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\obj\D
 C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\obj\Debug\net8.0-windows\rahagyasSzamitas.pdb
 C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\obj\Debug\net8.0-windows\rahagyasSzamitas.genruntimeconfig.cache
 C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\obj\Debug\net8.0-windows\ref\rahagyasSzamitas.dll
+C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\obj\Debug\net8.0-windows\UserControlEdit.g.cs
+C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\obj\Debug\net8.0-windows\UserControlmain.g.cs
+C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\obj\Debug\net8.0-windows\UserControlNew.g.cs
+C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\obj\Debug\net8.0-windows\Window1.g.cs
+C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\obj\Debug\net8.0-windows\UserControlEdit.baml
+C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\obj\Debug\net8.0-windows\UserControlmain.baml
+C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\obj\Debug\net8.0-windows\UserControlNew.baml
+C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\obj\Debug\net8.0-windows\Window1.baml
+C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs

@@ -2,10 +2,10 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
-    <Compile Update="UserControlMain.xaml.cs">
+    <Compile Update="UserControlEdit.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="UserControlEdit.xaml.cs">
+    <Compile Update="UserControlmain.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="UserControlNew.xaml.cs">

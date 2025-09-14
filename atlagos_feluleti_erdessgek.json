@@ -1,6 +1,6 @@
 {
     "title": "Átlagos felületi érdességek szabványos tűrésnagyságokhoz - Közepes fokozat",
-    "columns": [
+    "columns mikro méter": [
         "Méret (felett-ig)",
         "IT3",
         "IT4",
@@ -19,7 +19,7 @@
     ],
     "rows": [
       {
-        "Méret": "0-3",
+        "Méret mm": "0-3",
         "IT3": "0,20",
         "IT4": "0,20",
         "IT5": "0,20",
