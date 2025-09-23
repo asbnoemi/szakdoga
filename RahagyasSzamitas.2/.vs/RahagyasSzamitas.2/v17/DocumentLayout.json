@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\RahagyasSzamitas.2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6BB419BC-BFF0-4470-91B3-96539266EE1B}|RahagyasSzamitas.2\\RahagyasSzamitas.2.csproj|c:\\users\\asbot\\desktop\\szakdoga\\szakdoga\\rahagyasszamitas.2\\rahagyasszamitas.2\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6BB419BC-BFF0-4470-91B3-96539266EE1B}|RahagyasSzamitas.2\\RahagyasSzamitas.2.csproj|solutionrelative:rahagyasszamitas.2\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BB419BC-BFF0-4470-91B3-96539266EE1B}|RahagyasSzamitas.2\\RahagyasSzamitas.2.csproj|c:\\users\\asbot\\desktop\\szakdoga\\szakdoga\\rahagyasszamitas.2\\rahagyasszamitas.2\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BB419BC-BFF0-4470-91B3-96539266EE1B}|RahagyasSzamitas.2\\RahagyasSzamitas.2.csproj|solutionrelative:rahagyasszamitas.2\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\RahagyasSzamitas.2\\RahagyasSzamitas.2\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "RahagyasSzamitas.2\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\RahagyasSzamitas.2\\RahagyasSzamitas.2\\MainWindow.xaml",
+              "RelativeToolTip": "RahagyasSzamitas.2\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-23T17:09:02.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\RahagyasSzamitas.2\\RahagyasSzamitas.2\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "RahagyasSzamitas.2\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\RahagyasSzamitas.2\\RahagyasSzamitas.2\\MainWindow.xaml.cs",
+              "RelativeToolTip": "RahagyasSzamitas.2\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T17:09:00.136Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

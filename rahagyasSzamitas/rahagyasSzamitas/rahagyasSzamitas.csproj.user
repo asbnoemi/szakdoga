@@ -2,16 +2,19 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
-    <Compile Update="UserControlEdit.xaml.cs">
+    <Compile Update="View\Tables\TableBaseWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="UserControlmain.xaml.cs">
+    <Compile Update="View\UserControlEdit.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="UserControlNew.xaml.cs">
+    <Compile Update="View\MdulMainView\UserControlmain.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Window1.xaml.cs">
+    <Compile Update="View\UserControlNew.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Window1.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

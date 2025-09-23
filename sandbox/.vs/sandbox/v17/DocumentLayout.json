@@ -3,12 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\sandbox\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{99B6AC73-362E-452D-B7E2-A77216B33E68}|sandbox\\sandbox.csproj|c:\\users\\asbot\\desktop\\szakdoga\\szakdoga\\sandbox\\sandbox\\obj\\debug\\net8.0-windows\\app.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99B6AC73-362E-452D-B7E2-A77216B33E68}|sandbox\\sandbox.csproj|solutionrelative:sandbox\\obj\\debug\\net8.0-windows\\app.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99B6AC73-362E-452D-B7E2-A77216B33E68}|sandbox\\sandbox.csproj|c:\\users\\asbot\\desktop\\szakdoga\\szakdoga\\sandbox\\sandbox\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99B6AC73-362E-452D-B7E2-A77216B33E68}|sandbox\\sandbox.csproj|solutionrelative:sandbox\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99B6AC73-362E-452D-B7E2-A77216B33E68}|sandbox\\sandbox.csproj|c:\\users\\asbot\\desktop\\szakdoga\\szakdoga\\sandbox\\sandbox\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{99B6AC73-362E-452D-B7E2-A77216B33E68}|sandbox\\sandbox.csproj|solutionrelative:sandbox\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{99B6AC73-362E-452D-B7E2-A77216B33E68}|sandbox\\sandbox.csproj|c:\\users\\asbot\\desktop\\szakdoga\\szakdoga\\sandbox\\sandbox\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{99B6AC73-362E-452D-B7E2-A77216B33E68}|sandbox\\sandbox.csproj|solutionrelative:sandbox\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{99B6AC73-362E-452D-B7E2-A77216B33E68}|sandbox\\sandbox.csproj|c:\\users\\asbot\\desktop\\szakdoga\\szakdoga\\sandbox\\sandbox\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{99B6AC73-362E-452D-B7E2-A77216B33E68}|sandbox\\sandbox.csproj|solutionrelative:sandbox\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99B6AC73-362E-452D-B7E2-A77216B33E68}|sandbox\\sandbox.csproj|c:\\users\\asbot\\desktop\\szakdoga\\szakdoga\\sandbox\\sandbox\\sandbox.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{99B6AC73-362E-452D-B7E2-A77216B33E68}|sandbox\\sandbox.csproj|solutionrelative:sandbox\\sandbox.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99B6AC73-362E-452D-B7E2-A77216B33E68}|sandbox\\sandbox.csproj|c:\\users\\asbot\\desktop\\szakdoga\\szakdoga\\sandbox\\sandbox\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99B6AC73-362E-452D-B7E2-A77216B33E68}|sandbox\\sandbox.csproj|solutionrelative:sandbox\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,18 +43,43 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\sandbox\\sandbox\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "sandbox\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\sandbox\\sandbox\\MainWindow.xaml*",
-              "RelativeToolTip": "sandbox\\MainWindow.xaml*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-09-14T10:48:35.39Z",
+              "Title": "App.g.i.cs",
+              "DocumentMoniker": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\sandbox\\sandbox\\obj\\Debug\\net8.0-windows\\App.g.i.cs",
+              "RelativeDocumentMoniker": "sandbox\\obj\\Debug\\net8.0-windows\\App.g.i.cs",
+              "ToolTip": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\sandbox\\sandbox\\obj\\Debug\\net8.0-windows\\App.g.i.cs",
+              "RelativeToolTip": "sandbox\\obj\\Debug\\net8.0-windows\\App.g.i.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAgwDwAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T16:36:02.806Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\sandbox\\sandbox\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "sandbox\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\sandbox\\sandbox\\MainWindow.xaml",
+              "RelativeToolTip": "sandbox\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-23T16:35:11.534Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "sandbox",
+              "DocumentMoniker": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\sandbox\\sandbox\\sandbox.csproj",
+              "RelativeDocumentMoniker": "sandbox\\sandbox.csproj",
+              "ToolTip": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\sandbox\\sandbox\\sandbox.csproj",
+              "RelativeToolTip": "sandbox\\sandbox.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-23T16:33:36.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\sandbox\\sandbox\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "sandbox\\MainWindow.xaml.cs",
@@ -42,7 +87,45 @@
               "RelativeToolTip": "sandbox\\MainWindow.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-14T10:48:33.372Z",
+              "WhenOpened": "2025-09-23T16:33:02.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\sandbox\\sandbox\\App.xaml.cs",
+              "RelativeDocumentMoniker": "sandbox\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\sandbox\\sandbox\\App.xaml.cs",
+              "RelativeToolTip": "sandbox\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T16:32:53.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\sandbox\\sandbox\\App.xaml",
+              "RelativeDocumentMoniker": "sandbox\\App.xaml",
+              "ToolTip": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\sandbox\\sandbox\\App.xaml",
+              "RelativeToolTip": "sandbox\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-23T16:32:50.986Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\sandbox\\sandbox\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "sandbox\\AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\sandbox\\sandbox\\AssemblyInfo.cs",
+              "RelativeToolTip": "sandbox\\AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T16:32:44.47Z",
               "EditorCaption": ""
             }
           ]

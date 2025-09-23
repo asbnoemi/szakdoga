@@ -21,9 +21,6 @@ namespace rahagyasSzamitas
         public MainWindow()
         {
             InitializeComponent();
-
-            
-
         }
     }
 }

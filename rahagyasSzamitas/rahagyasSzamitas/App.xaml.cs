@@ -2,6 +2,7 @@
 using System.Data;
 using System.Windows;
 
+
 namespace rahagyasSzamitas
 {
     /// <summary>
@@ -9,6 +10,7 @@ namespace rahagyasSzamitas
     /// </summary>
     public partial class App : Application
     {
+
     }
 
 }

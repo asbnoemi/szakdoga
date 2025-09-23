@@ -9,9 +9,42 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="View\MdulMainView\save_icon_top_left.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Remove="View\App.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="View\MdulMainView\save_icon_top_left.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Update="MainWindow.xaml.cs">
       <Generator></Generator>
     </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="ITszamok.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="kep\ITszamok.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Modell\Tablels\atlagos_feluleti_erdessgek.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Modell\Tablels\turesosztalyok.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Modell\Tablels\turesosztalyok_hegesztett_uj.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Modell\Tablels\turesosztalyok_szogek.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
