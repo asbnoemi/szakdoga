@@ -12,12 +12,15 @@ namespace rahagyasSzamitas.Modell.Tablels
 {   
     public class TableData
     {
-        public int sizeRange { get; set; }
+        public int sizeRangeMin { get; set; }
+        public int sizeRangeMax { get; set; }
         public string Itnum { get; set; }
         public double size { get; set; }
-        public TableData(int sizeRange, string Itnum, double size)
+        public TableData(int sizeRangeMax,int sizRangeMin , string Itnum, double size)
         {
-            this.sizeRange = sizeRange;
+            
+            this.sizeRangeMax = sizeRangeMax;
+            this.sizeRangeMin = sizRangeMin;
             this.Itnum = Itnum;
             this.size = size;
         }

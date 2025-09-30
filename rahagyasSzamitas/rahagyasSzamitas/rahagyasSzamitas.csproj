@@ -36,6 +36,9 @@
     <None Update="Modell\Tablels\atlagos_feluleti_erdessgek.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Update="Modell\Tablels\atlagos_feluleti_erdessgek_listas.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Modell\Tablels\turesosztalyok.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

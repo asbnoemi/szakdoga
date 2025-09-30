@@ -45,5 +45,12 @@
             <Button Content="táblák modositása" Background="{x:Null}" Click="ShowTable"/>
             <Button Content="táblák megtekintése" Background="{x:Null}" Click="ShowTable"/>
         </StackPanel>
+        <ListView Grid.Row="2"  Margin="438,0,0,0" Loaded="ListView_Loaded">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
     </Grid>
 </UserControl>

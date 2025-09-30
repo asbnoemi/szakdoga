@@ -30,3 +30,4 @@ C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\obj\D
 C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\obj\Debug\net8.0-windows\App.g.cs
 C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\obj\Debug\net8.0-windows\MainWindow.g.cs
 C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\bin\Debug\net8.0-windows\Modell\Tablels\atlagos_feluleti_erdessgek_listas.csv

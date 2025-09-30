@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using rahagyasSzamitas.Modell.Tablels;
 using rahagyasSzamitas.View.Tables;
 
 namespace rahagyasSzamitas
@@ -73,6 +74,11 @@ namespace rahagyasSzamitas
         private void szmBT_Click(object sender, RoutedEventArgs e)
         {
             TableBaseWindow tableBaseWindow = new TableBaseWindow();
+        }
+
+        private void ListView_Loaded(object sender, RoutedEventArgs e)
+        {
+            (sender as ListView).ItemsSource = new TableData(0, "", 0).TableDataLoad("atlagos_feluleti_erdessgek_listas.csv");
         }
     }
 }
