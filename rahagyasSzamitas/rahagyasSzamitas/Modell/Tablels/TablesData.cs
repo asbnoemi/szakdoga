@@ -32,17 +32,17 @@ namespace rahagyasSzamitas.Modell.Tablels
                 if (string.IsNullOrWhiteSpace(line)) continue;
 
                 var parts = line.Split(';'); 
-                if (parts.Length < 3) continue;
+                if (parts.Length < 4) continue;
 
-                if (!int.TryParse(parts[0].Trim(), out var sizeRange)) continue;
-                var itnum = parts[1].Trim();
-
-                var s = parts[2].Trim().Replace(',', '.');
+                if (!int.TryParse(parts[0].Trim(), out var sizeRangeMin)) continue;
+                if (!int.TryParse(parts[1].Trim(), out var sizeRangeMax)) continue;
+                var itnum = parts[2].Trim();
+                var s = parts[3].Trim().Replace(',', '.');
                 if (!double.TryParse(s, System.Globalization.NumberStyles.Float,
                                      System.Globalization.CultureInfo.InvariantCulture,
                                      out var size)) continue;
 
-                TableDatas.Add(new TableData(sizeRange, itnum, size));
+                TableDatas.Add(new TableData( sizeRangeMin, sizeRangeMax , itnum, size));
             }
             return TableDatas;
         }

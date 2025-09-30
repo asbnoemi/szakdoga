@@ -29,8 +29,7 @@ namespace rahagyasSzamitas
 
         private void RadioButton_Checked(object sender, RoutedEventArgs e)
         {
-            IT3.Visibility = Visibility.Visible;
-            IT4.Visibility = Visibility.Visible;
+            
             IT5.Visibility = Visibility.Visible;
             IT6.Visibility = Visibility.Visible;
             IT7.Visibility = Visibility.Visible;
@@ -43,8 +42,7 @@ namespace rahagyasSzamitas
             IT14.Visibility = Visibility.Visible;
             IT15.Visibility = Visibility.Visible;
             IT16.Visibility = Visibility.Visible;
-            IT3.IsEnabled = true;
-            IT4.IsEnabled = true;
+            
             IT5.IsEnabled = true;
             IT6.IsEnabled = true;
             IT7.IsEnabled = true;
@@ -57,7 +55,8 @@ namespace rahagyasSzamitas
             IT14.IsEnabled = true;
             IT15.IsEnabled = true;
             IT16.IsEnabled = true;
-            
+            texBoxRou.IsEnabled = false;
+            texBoxRou.Text = "felületi érdeség";
 
         }
 
@@ -68,7 +67,8 @@ namespace rahagyasSzamitas
 
         private void ShowTable(object sender, RoutedEventArgs e)
         {
-
+            TableBaseWindow tableBaseWindow = new TableBaseWindow();
+            tableBaseWindow.Show();
         }
 
         private void szmBT_Click(object sender, RoutedEventArgs e)
@@ -78,7 +78,35 @@ namespace rahagyasSzamitas
 
         private void ListView_Loaded(object sender, RoutedEventArgs e)
         {
-            (sender as ListView).ItemsSource = new TableData(0, "", 0).TableDataLoad("atlagos_feluleti_erdessgek_listas.csv");
+            (sender as ListView).ItemsSource = new TableData(0,0,"", 0).TableDataLoad("atlagos_feluleti_erdessgek_listas.csv");
+        }
+
+        private void RadioButton_Checked_1(object sender, RoutedEventArgs e)
+        {
+            IT5.Visibility = Visibility.Hidden;
+            IT6.Visibility = Visibility.Hidden;
+            IT7.Visibility = Visibility.Hidden;
+            IT8.Visibility = Visibility.Hidden;
+            IT9.Visibility = Visibility.Hidden;
+            IT10.Visibility = Visibility.Hidden;
+            IT11.Visibility = Visibility.Hidden;
+            IT12.Visibility = Visibility.Hidden;
+            IT13.Visibility = Visibility.Hidden;
+            IT14.Visibility = Visibility.Hidden;
+            IT15.Visibility = Visibility.Hidden;
+            IT16.Visibility = Visibility.Hidden;
+            texBoxRou.Text = "";
+            texBoxRou.IsEnabled = true; 
+        }
+
+        private void RadioButton_Checked_2(object sender, RoutedEventArgs e)
+        {
+            texBoxSize.Text = "";
+        }
+
+        private void RadioButton_Checked_3(object sender, RoutedEventArgs e)
+        {
+            texBoxSize.Text = "";
         }
     }
 }

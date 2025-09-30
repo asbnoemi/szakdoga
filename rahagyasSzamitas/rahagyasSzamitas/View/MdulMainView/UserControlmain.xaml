@@ -10,8 +10,7 @@
             <RowDefinition Height="49*"/>
             <RowDefinition Height="390*"/>
         </Grid.RowDefinitions>
-        <RadioButton Name="IT3" IsEnabled="False" Visibility="Hidden" Content="..IT3" HorizontalAlignment="Left" Margin="243,24,0,0" VerticalAlignment="Top" Height="15" Grid.RowSpan="2"/>
-        <RadioButton Name="IT4" IsEnabled="False" Visibility="Hidden" Content="IT4" HorizontalAlignment="Left" Margin="243,8,0,0" VerticalAlignment="Top" Height="15" Grid.Row="1"/>
+        
         <RadioButton Name="IT5" IsEnabled="False" Visibility="Hidden" Content="IT5" HorizontalAlignment="Left" Margin="243,28,0,0" VerticalAlignment="Top" Height="15" Grid.Row="1"/>
         <RadioButton Name="IT6"  IsEnabled="False" Visibility="Hidden" Content="IT6" HorizontalAlignment="Left" Margin="243,1,0,0" VerticalAlignment="Top" Height="15" Grid.Row="2"/>
         <RadioButton Name="IT7" IsEnabled="False" Visibility="Hidden" Content="IT7" HorizontalAlignment="Left" Margin="243,21,0,0" VerticalAlignment="Top" Height="14" Grid.Row="2"/>
@@ -25,15 +24,15 @@
         <RadioButton Name="IT15" IsEnabled="False" Visibility="Hidden" Content="IT15" HorizontalAlignment="Left" Margin="243,178,0,0" VerticalAlignment="Top" Grid.Row="2"/>
         <RadioButton Name="IT16" IsEnabled="False" Visibility="Hidden" Content="IT16" HorizontalAlignment="Left" Margin="243,193,0,0" VerticalAlignment="Top" Grid.Row="2"/>
         <StackPanel  Margin="49,72,547,248" Orientation="Vertical" Grid.Row="2" >
-            <RadioButton Content="felületi érdeséget adok meg" />
+            <RadioButton Content="felületi érdeséget adok meg" Checked="RadioButton_Checked_1" />
             <RadioButton Content="IT számot választok" Checked="RadioButton_Checked" />
-            <TextBox TextWrapping="Wrap" Text="felületi érdeség" />
+            <TextBox Name="texBoxRou" TextWrapping="Wrap" Text="felületi érdeség" />
         </StackPanel>
         <StackPanel Margin="49,0,556,316" Orientation="Vertical" Grid.Row="2">
-            <RadioButton Content="hoszz" />
-            <RadioButton Content="átmérö" >
+            <RadioButton Content="hoszz" Checked="RadioButton_Checked_2" />
+            <RadioButton Content="átmérö" Checked="RadioButton_Checked_3" >
             </RadioButton>
-            <TextBox TextWrapping="Wrap" Text="méret mm " TextChanged="TextBox_TextChanged"/>
+            <TextBox Name="texBoxSize" TextWrapping="Wrap" Text="méret mm " TextChanged="TextBox_TextChanged"/>
         </StackPanel>
         <Button x:Name="szmBT" Content="számol" HorizontalAlignment="Left" Margin="49,140,0,0" VerticalAlignment="Top" Height="27" Width="82" Grid.Row="2" Click="szmBT_Click"/>
         <StackPanel HorizontalAlignment="Center" Height="48" VerticalAlignment="Top" Width="768" Background="#FF62C2B7" Orientation="Horizontal" Grid.RowSpan="2">
@@ -45,12 +44,5 @@
             <Button Content="táblák modositása" Background="{x:Null}" Click="ShowTable"/>
             <Button Content="táblák megtekintése" Background="{x:Null}" Click="ShowTable"/>
         </StackPanel>
-        <ListView Grid.Row="2"  Margin="438,0,0,0" Loaded="ListView_Loaded">
-            <ListView.View>
-                <GridView>
-                    <GridViewColumn/>
-                </GridView>
-            </ListView.View>
-        </ListView>
     </Grid>
 </UserControl>

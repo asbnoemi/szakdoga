@@ -23,12 +23,21 @@ namespace rahagyasSzamitas.View.Tables
         public TableBaseWindow()
         {
             InitializeComponent();
-            DataGrid1.ItemsSource = new TableData(0, "", 0).TableDataLoad("Tables/atlagos_feluleti_erdessgek_listas.csv");
+            TableData tableData = new TableData(0, 0, "", 0);
+            var Dislist = tableData.TableDataLoad("atlagos_feluleti_erdessgek_listas.csv");
+          dataTable.ItemsSource = Dislist;
+
+
         }
 
         private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
+        }
+
+        private void ListBox_Initialized(object sender, EventArgs e)
+        {
+            
         }
     }
 }

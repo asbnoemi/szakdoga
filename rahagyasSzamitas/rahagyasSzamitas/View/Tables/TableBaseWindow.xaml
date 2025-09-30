@@ -8,7 +8,16 @@
         Title="TableBaseWindow" Height="450" Width="800">
     <Grid>
         <Grid>
-            <DataGrid x:Name="DataGrid1"  Margin="168,10,232,109" AutomationProperties.Name=""/>
+            <ListView x:Name="dataTable" d:ItemsSource="{d:SampleData ItemCount=5}">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Column 1" Width="120" DisplayMemberBinding="{Binding Path=sizeRangeMin}"/>
+                        <GridViewColumn Header="Column 2" Width="120" DisplayMemberBinding="{Binding Path=sizeRangeMax}"/>
+                        <GridViewColumn Header="Column 3" Width="120" DisplayMemberBinding="{Binding Path=Itnum}"/>
+                        <GridViewColumn Header="Column 4" Width="120" DisplayMemberBinding="{Binding Path=size}"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
         </Grid>
     </Grid>
 </Window>
