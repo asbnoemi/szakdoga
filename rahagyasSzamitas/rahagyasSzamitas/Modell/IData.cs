@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace rahagyasSzamitas.Modell.ModulMain
+namespace rahagyasSzamitas.Modell
 {
-    interface Config
+   public interface IData
     {
+        public void Parse(List<string> row);
     }
 }

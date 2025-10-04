@@ -14,6 +14,9 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using rahagyasSzamitas.Modell.Tablels;
 using rahagyasSzamitas.View.Tables;
+using rahagyasSzamitas.View;
+using rahagyasSzamitas.Modell;
+
 
 namespace rahagyasSzamitas
 {
@@ -76,10 +79,7 @@ namespace rahagyasSzamitas
             TableBaseWindow tableBaseWindow = new TableBaseWindow();
         }
 
-        private void ListView_Loaded(object sender, RoutedEventArgs e)
-        {
-            (sender as ListView).ItemsSource = new TableData(0,0,"", 0).TableDataLoad("atlagos_feluleti_erdessgek_listas.csv");
-        }
+        
 
         private void RadioButton_Checked_1(object sender, RoutedEventArgs e)
         {

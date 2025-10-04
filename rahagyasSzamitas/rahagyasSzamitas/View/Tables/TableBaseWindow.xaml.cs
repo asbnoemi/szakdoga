@@ -1,6 +1,10 @@
-﻿using System;
+﻿using rahagyasSzamitas.Modell;
+using rahagyasSzamitas.Modell.Tablels;
+using System;
 using System.Collections.Generic;
+using System.Data.Common;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -11,7 +15,6 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using rahagyasSzamitas.Modell.Tablels;
 
 namespace rahagyasSzamitas.View.Tables
 {
@@ -23,8 +26,10 @@ namespace rahagyasSzamitas.View.Tables
         public TableBaseWindow()
         {
             InitializeComponent();
-            TableData tableData = new TableData(0, 0, "", 0);
-            var Dislist = tableData.TableDataLoad("atlagos_feluleti_erdessgek_listas.csv");
+            DataArrange<TableData> l = new DataArrange<TableData>();
+          var Dislist   = new DataArrange<TableData>().GetAll("lis", "atlagos_feluleti_erdessgek_listas.csv");
+        
+        
           dataTable.ItemsSource = Dislist;
 
 

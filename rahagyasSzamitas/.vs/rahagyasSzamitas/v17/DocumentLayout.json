@@ -3,36 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\rahagyasSzamitas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BD733B04-009D-4963-BC43-14FF19A0A7B9}|rahagyasSzamitas\\rahagyasSzamitas.csproj|c:\\users\\asbot\\desktop\\szakdoga\\szakdoga\\rahagyasszamitas\\rahagyasszamitas\\modell\\modulmain\\calculation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD733B04-009D-4963-BC43-14FF19A0A7B9}|rahagyasSzamitas\\rahagyasSzamitas.csproj|solutionrelative:rahagyasszamitas\\modell\\modulmain\\calculation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BD733B04-009D-4963-BC43-14FF19A0A7B9}|rahagyasSzamitas\\rahagyasSzamitas.csproj|c:\\users\\asbot\\desktop\\szakdoga\\szakdoga\\rahagyasszamitas\\rahagyasszamitas\\modell\\tablels\\tablesdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD733B04-009D-4963-BC43-14FF19A0A7B9}|rahagyasSzamitas\\rahagyasSzamitas.csproj|solutionrelative:rahagyasszamitas\\modell\\tablels\\tablesdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BD733B04-009D-4963-BC43-14FF19A0A7B9}|rahagyasSzamitas\\rahagyasSzamitas.csproj|c:\\users\\asbot\\desktop\\szakdoga\\szakdoga\\rahagyasszamitas\\rahagyasszamitas\\view\\mdulmainview\\usercontrolmain.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD733B04-009D-4963-BC43-14FF19A0A7B9}|rahagyasSzamitas\\rahagyasSzamitas.csproj|solutionrelative:rahagyasszamitas\\view\\mdulmainview\\usercontrolmain.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BD733B04-009D-4963-BC43-14FF19A0A7B9}|rahagyasSzamitas\\rahagyasSzamitas.csproj|c:\\users\\asbot\\desktop\\szakdoga\\szakdoga\\rahagyasszamitas\\rahagyasszamitas\\view\\mdulmainview\\usercontrolmain.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{BD733B04-009D-4963-BC43-14FF19A0A7B9}|rahagyasSzamitas\\rahagyasSzamitas.csproj|solutionrelative:rahagyasszamitas\\view\\mdulmainview\\usercontrolmain.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD733B04-009D-4963-BC43-14FF19A0A7B9}|rahagyasSzamitas\\rahagyasSzamitas.csproj|c:\\users\\asbot\\desktop\\szakdoga\\szakdoga\\rahagyasszamitas\\rahagyasszamitas\\modell\\modulmain\\mainwindomodell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD733B04-009D-4963-BC43-14FF19A0A7B9}|rahagyasSzamitas\\rahagyasSzamitas.csproj|solutionrelative:rahagyasszamitas\\modell\\modulmain\\mainwindomodell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BD733B04-009D-4963-BC43-14FF19A0A7B9}|rahagyasSzamitas\\rahagyasSzamitas.csproj|c:\\users\\asbot\\desktop\\szakdoga\\szakdoga\\rahagyasszamitas\\rahagyasszamitas\\modell\\tablels\\atlagos_feluleti_erdessgek_listas.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{BD733B04-009D-4963-BC43-14FF19A0A7B9}|rahagyasSzamitas\\rahagyasSzamitas.csproj|solutionrelative:rahagyasszamitas\\modell\\tablels\\atlagos_feluleti_erdessgek_listas.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD733B04-009D-4963-BC43-14FF19A0A7B9}|rahagyasSzamitas\\rahagyasSzamitas.csproj|c:\\users\\asbot\\desktop\\szakdoga\\szakdoga\\rahagyasszamitas\\rahagyasszamitas\\modell\\tablels\\tablesdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD733B04-009D-4963-BC43-14FF19A0A7B9}|rahagyasSzamitas\\rahagyasSzamitas.csproj|solutionrelative:rahagyasszamitas\\modell\\tablels\\tablesdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD733B04-009D-4963-BC43-14FF19A0A7B9}|rahagyasSzamitas\\rahagyasSzamitas.csproj|c:\\users\\asbot\\desktop\\szakdoga\\szakdoga\\rahagyasszamitas\\rahagyasszamitas\\modell\\datacsvbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD733B04-009D-4963-BC43-14FF19A0A7B9}|rahagyasSzamitas\\rahagyasSzamitas.csproj|solutionrelative:rahagyasszamitas\\modell\\datacsvbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BD733B04-009D-4963-BC43-14FF19A0A7B9}|rahagyasSzamitas\\rahagyasSzamitas.csproj|c:\\users\\asbot\\desktop\\szakdoga\\szakdoga\\rahagyasszamitas\\rahagyasszamitas\\view\\tables\\tablebasewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BD733B04-009D-4963-BC43-14FF19A0A7B9}|rahagyasSzamitas\\rahagyasSzamitas.csproj|solutionrelative:rahagyasszamitas\\view\\tables\\tablebasewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD733B04-009D-4963-BC43-14FF19A0A7B9}|rahagyasSzamitas\\rahagyasSzamitas.csproj|c:\\users\\asbot\\desktop\\szakdoga\\szakdoga\\rahagyasszamitas\\rahagyasszamitas\\view\\mdulmainview\\usercontrolmain.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD733B04-009D-4963-BC43-14FF19A0A7B9}|rahagyasSzamitas\\rahagyasSzamitas.csproj|solutionrelative:rahagyasszamitas\\view\\mdulmainview\\usercontrolmain.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BD733B04-009D-4963-BC43-14FF19A0A7B9}|rahagyasSzamitas\\rahagyasSzamitas.csproj|c:\\users\\asbot\\desktop\\szakdoga\\szakdoga\\rahagyasszamitas\\rahagyasszamitas\\view\\tables\\tablebasewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{BD733B04-009D-4963-BC43-14FF19A0A7B9}|rahagyasSzamitas\\rahagyasSzamitas.csproj|solutionrelative:rahagyasszamitas\\view\\tables\\tablebasewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{BD733B04-009D-4963-BC43-14FF19A0A7B9}|rahagyasSzamitas\\rahagyasSzamitas.csproj|c:\\users\\asbot\\desktop\\szakdoga\\szakdoga\\rahagyasszamitas\\rahagyasszamitas\\modell\\dataarrange.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD733B04-009D-4963-BC43-14FF19A0A7B9}|rahagyasSzamitas\\rahagyasSzamitas.csproj|solutionrelative:rahagyasszamitas\\modell\\dataarrange.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,19 +38,83 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MainWindoModell.cs",
-              "DocumentMoniker": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\rahagyasSzamitas\\rahagyasSzamitas\\Modell\\ModulMain\\MainWindoModell.cs",
-              "RelativeDocumentMoniker": "rahagyasSzamitas\\Modell\\ModulMain\\MainWindoModell.cs",
-              "ToolTip": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\rahagyasSzamitas\\rahagyasSzamitas\\Modell\\ModulMain\\MainWindoModell.cs",
-              "RelativeToolTip": "rahagyasSzamitas\\Modell\\ModulMain\\MainWindoModell.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "UserControlmain.xaml",
+              "DocumentMoniker": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\rahagyasSzamitas\\rahagyasSzamitas\\View\\MdulMainView\\UserControlmain.xaml",
+              "RelativeDocumentMoniker": "rahagyasSzamitas\\View\\MdulMainView\\UserControlmain.xaml",
+              "ToolTip": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\rahagyasSzamitas\\rahagyasSzamitas\\View\\MdulMainView\\UserControlmain.xaml",
+              "RelativeToolTip": "rahagyasSzamitas\\View\\MdulMainView\\UserControlmain.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-04T16:27:29.326Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserControlmain.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\rahagyasSzamitas\\rahagyasSzamitas\\View\\MdulMainView\\UserControlmain.xaml.cs",
+              "RelativeDocumentMoniker": "rahagyasSzamitas\\View\\MdulMainView\\UserControlmain.xaml.cs",
+              "ToolTip": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\rahagyasSzamitas\\rahagyasSzamitas\\View\\MdulMainView\\UserControlmain.xaml.cs",
+              "RelativeToolTip": "rahagyasSzamitas\\View\\MdulMainView\\UserControlmain.xaml.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAAABwAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T16:23:20.226Z",
+              "WhenOpened": "2025-10-04T15:29:59.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DataArrange.cs",
+              "DocumentMoniker": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\rahagyasSzamitas\\rahagyasSzamitas\\Modell\\DataArrange.cs",
+              "RelativeDocumentMoniker": "rahagyasSzamitas\\Modell\\DataArrange.cs",
+              "ToolTip": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\rahagyasSzamitas\\rahagyasSzamitas\\Modell\\DataArrange.cs",
+              "RelativeToolTip": "rahagyasSzamitas\\Modell\\DataArrange.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-04T09:55:23.538Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TablesData.cs",
+              "DocumentMoniker": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\rahagyasSzamitas\\rahagyasSzamitas\\Modell\\Tablels\\TablesData.cs",
+              "RelativeDocumentMoniker": "rahagyasSzamitas\\Modell\\Tablels\\TablesData.cs",
+              "ToolTip": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\rahagyasSzamitas\\rahagyasSzamitas\\Modell\\Tablels\\TablesData.cs",
+              "RelativeToolTip": "rahagyasSzamitas\\Modell\\Tablels\\TablesData.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T17:18:53.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DataCsvBase.cs",
+              "DocumentMoniker": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\rahagyasSzamitas\\rahagyasSzamitas\\Modell\\DataCsvBase.cs",
+              "RelativeDocumentMoniker": "rahagyasSzamitas\\Modell\\DataCsvBase.cs",
+              "ToolTip": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\rahagyasSzamitas\\rahagyasSzamitas\\Modell\\DataCsvBase.cs",
+              "RelativeToolTip": "rahagyasSzamitas\\Modell\\DataCsvBase.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-04T09:53:45.738Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "atlagos_feluleti_erdessgek_listas.csv",
+              "DocumentMoniker": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\rahagyasSzamitas\\rahagyasSzamitas\\Modell\\Tablels\\atlagos_feluleti_erdessgek_listas.csv",
+              "RelativeDocumentMoniker": "rahagyasSzamitas\\Modell\\Tablels\\atlagos_feluleti_erdessgek_listas.csv",
+              "ToolTip": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\rahagyasSzamitas\\rahagyasSzamitas\\Modell\\Tablels\\atlagos_feluleti_erdessgek_listas.csv",
+              "RelativeToolTip": "rahagyasSzamitas\\Modell\\Tablels\\atlagos_feluleti_erdessgek_listas.csv",
+              "ViewState": "AgIAAJQAAAAAAAAAAAAAALEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
+              "WhenOpened": "2025-10-04T16:06:18.582Z",
               "EditorCaption": ""
             },
             {
@@ -65,85 +125,10 @@
               "RelativeDocumentMoniker": "rahagyasSzamitas\\View\\Tables\\TableBaseWindow.xaml.cs",
               "ToolTip": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\rahagyasSzamitas\\rahagyasSzamitas\\View\\Tables\\TableBaseWindow.xaml.cs",
               "RelativeToolTip": "rahagyasSzamitas\\View\\Tables\\TableBaseWindow.xaml.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAIwBsAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAMwB8AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T13:11:21.885Z",
+              "WhenOpened": "2025-10-04T15:38:16.868Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UserControlmain.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\rahagyasSzamitas\\rahagyasSzamitas\\View\\MdulMainView\\UserControlmain.xaml.cs",
-              "RelativeDocumentMoniker": "rahagyasSzamitas\\View\\MdulMainView\\UserControlmain.xaml.cs",
-              "ToolTip": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\rahagyasSzamitas\\rahagyasSzamitas\\View\\MdulMainView\\UserControlmain.xaml.cs",
-              "RelativeToolTip": "rahagyasSzamitas\\View\\MdulMainView\\UserControlmain.xaml.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAApwEYAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T11:11:12.853Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TablesData.cs",
-              "DocumentMoniker": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\rahagyasSzamitas\\rahagyasSzamitas\\Modell\\Tablels\\TablesData.cs",
-              "RelativeDocumentMoniker": "rahagyasSzamitas\\Modell\\Tablels\\TablesData.cs",
-              "ToolTip": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\rahagyasSzamitas\\rahagyasSzamitas\\Modell\\Tablels\\TablesData.cs",
-              "RelativeToolTip": "rahagyasSzamitas\\Modell\\Tablels\\TablesData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T17:18:53.06Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UserControlmain.xaml",
-              "DocumentMoniker": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\rahagyasSzamitas\\rahagyasSzamitas\\View\\MdulMainView\\UserControlmain.xaml",
-              "RelativeDocumentMoniker": "rahagyasSzamitas\\View\\MdulMainView\\UserControlmain.xaml",
-              "ToolTip": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\rahagyasSzamitas\\rahagyasSzamitas\\View\\MdulMainView\\UserControlmain.xaml",
-              "RelativeToolTip": "rahagyasSzamitas\\View\\MdulMainView\\UserControlmain.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-09-25T11:11:26.973Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Calculation.cs",
-              "DocumentMoniker": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\rahagyasSzamitas\\rahagyasSzamitas\\Modell\\ModulMain\\Calculation.cs",
-              "RelativeDocumentMoniker": "rahagyasSzamitas\\Modell\\ModulMain\\Calculation.cs",
-              "ToolTip": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\rahagyasSzamitas\\rahagyasSzamitas\\Modell\\ModulMain\\Calculation.cs",
-              "RelativeToolTip": "rahagyasSzamitas\\Modell\\ModulMain\\Calculation.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAuwCoAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T16:21:03.476Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "atlagos_feluleti_erdessgek_listas.csv",
-              "DocumentMoniker": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\rahagyasSzamitas\\rahagyasSzamitas\\Modell\\Tablels\\atlagos_feluleti_erdessgek_listas.csv",
-              "RelativeDocumentMoniker": "rahagyasSzamitas\\Modell\\Tablels\\atlagos_feluleti_erdessgek_listas.csv",
-              "ToolTip": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\rahagyasSzamitas\\rahagyasSzamitas\\Modell\\Tablels\\atlagos_feluleti_erdessgek_listas.csv",
-              "RelativeToolTip": "rahagyasSzamitas\\Modell\\Tablels\\atlagos_feluleti_erdessgek_listas.csv",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
-              "WhenOpened": "2025-09-29T14:12:36.798Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "TableBaseWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\rahagyasSzamitas\\rahagyasSzamitas\\View\\Tables\\TableBaseWindow.xaml",
-              "RelativeDocumentMoniker": "rahagyasSzamitas\\View\\Tables\\TableBaseWindow.xaml",
-              "ToolTip": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\rahagyasSzamitas\\rahagyasSzamitas\\View\\Tables\\TableBaseWindow.xaml",
-              "RelativeToolTip": "rahagyasSzamitas\\View\\Tables\\TableBaseWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-09-30T13:30:37.789Z"
             }
           ]
         }
