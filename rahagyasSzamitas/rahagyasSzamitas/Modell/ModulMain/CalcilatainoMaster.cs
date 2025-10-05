@@ -8,7 +8,7 @@ namespace rahagyasSzamitas.Modell.ModulMain
 {
     public class CalcilatainoMaster
     {
-        public List<CalculationData> OllData { get; set; } 
+        public List<CalculationData> AllData { get; set; } 
         public string name { get; set; }
         public void save()
         {

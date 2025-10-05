@@ -5,16 +5,10 @@
     <Compile Update="View\Tables\TableBaseWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="View\UserControlEdit.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Update="View\MdulMainView\UserControlmain.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="View\UserControlNew.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="View\Window1.xaml.cs">
+    <Compile Update="View\Tables\Tablechoice.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

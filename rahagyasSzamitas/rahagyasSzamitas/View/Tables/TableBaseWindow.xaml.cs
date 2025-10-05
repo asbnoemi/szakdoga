@@ -23,11 +23,11 @@ namespace rahagyasSzamitas.View.Tables
     /// </summary>
     public partial class TableBaseWindow : Window
     {
-        public TableBaseWindow()
+        public TableBaseWindow(string FileName)
         {
             InitializeComponent();
             DataArrange<DataTableITSize> l = new DataArrange<DataTableITSize>();
-          var Dislist   = new DataArrange<DataTableITSize>().GetAll("lis", "atlagos_feluleti_erdessgek_listas.csv");
+          var Dislist   = new DataArrange<DataTableITSize>().GetAll("lis",FileName );
         
         
           dataTable.ItemsSource = Dislist;

@@ -1,0 +1,14 @@
+﻿<Window x:Class="rahagyasSzamitas.View.Tables.Tablechoice"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:rahagyasSzamitas.View.Tables"
+        mc:Ignorable="d"
+        Title="Tablechoice" Height="226" Width="630">
+    <Grid>
+        <ComboBox x:Name="TablesComB" HorizontalAlignment="Left" Margin="44,55,0,0" VerticalAlignment="Top" Width="215" Height="28" Loaded="TablesComB_Loaded"/>
+        <Button x:Name="OpenBT" Content="megnyit" HorizontalAlignment="Center" Margin="0,46,0,0" VerticalAlignment="Top" Height="46" Width="72" Click="OpenBT_Click"/>
+
+    </Grid>
+</Window>

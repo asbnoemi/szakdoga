@@ -70,13 +70,17 @@ namespace rahagyasSzamitas
 
         private void ShowTable(object sender, RoutedEventArgs e)
         {
-            TableBaseWindow tableBaseWindow = new TableBaseWindow();
-            tableBaseWindow.Show();
+            Tablechoice tablechoice = new Tablechoice();
+            tablechoice.ShowDialog();
+           // TableBaseWindow tableBaseWindow = new TableBaseWindow();
+            //tableBaseWindow.Show();
         }
 
         private void szmBT_Click(object sender, RoutedEventArgs e)
         {
-            TableBaseWindow tableBaseWindow = new TableBaseWindow();
+            ///TableBaseWindow tableBaseWindow = new TableBaseWindow();
+            Tablechoice tablechoice = new Tablechoice();
+            tablechoice.ShowDialog();
         }
 
         

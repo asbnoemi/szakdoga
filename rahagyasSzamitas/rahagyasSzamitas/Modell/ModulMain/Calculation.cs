@@ -31,14 +31,14 @@ namespace rahagyasSzamitas.Modell.ModulMain
                 O = CalculationOriginTolerance(this, CalculationT(this, CalculationR((int)Calculationi(this), this)))
             };
         }
-        public double Calculationi(Calculation actual)
+        private double Calculationi(Calculation actual)
         {
             double i = 0;
             i = 0.45 * Math.Cbrt(actual.size) * 0.001 * actual.size;
             i = i * 0.001;// mikrométer bol mm-be
             return i;
         }
-        public double[] CalculationR(int i, Calculation actual)
+        private double[] CalculationR(int i, Calculation actual)
         {
             int q = 0;// IT szám alapján keresni kell kis táblázatban
             double[] R = new double[2];
@@ -46,13 +46,13 @@ namespace rahagyasSzamitas.Modell.ModulMain
             R[1] = q * i;
             return R;
         }
-        public double CalculationT(Calculation actual, double[] R)
+        private double CalculationT(Calculation actual, double[] R)
         {
             double T = 0;
             T = actual.size + R[0];
             return T;
         }
-        public double CalculationOriginTolerance(Calculation actual, double T)
+        private double CalculationOriginTolerance(Calculation actual, double T)
         {
             double O = 0;// eredeti ráhagyás esetén kell 
             O = T / 2;
