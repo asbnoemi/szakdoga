@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,6 +17,19 @@ namespace rahagyasSzamitas.Modell.ModulMain
             this.size = size;
             this.surfaceRoughness = surfaceRoughness;
             this.ITnum = ITnum;
+        }
+        public CalculationData ThisCalculations() 
+        {
+            return new CalculationData()
+            {
+                size = this.size,
+                surfaceRoughness = this.surfaceRoughness,
+                ITnum = this.ITnum,
+                i = Calculationi(this),
+                R = CalculationR((int)Calculationi(this), this),
+                T = CalculationT(this, CalculationR((int)Calculationi(this), this)),
+                O = CalculationOriginTolerance(this, CalculationT(this, CalculationR((int)Calculationi(this), this)))
+            };
         }
         public double Calculationi(Calculation actual)
         {
@@ -38,7 +52,7 @@ namespace rahagyasSzamitas.Modell.ModulMain
             T = actual.size + R[0];
             return T;
         }
-        public double CalculationOriginPatience(Calculation actual, double T)
+        public double CalculationOriginTolerance(Calculation actual, double T)
         {
             double O = 0;// eredeti ráhagyás esetén kell 
             O = T / 2;

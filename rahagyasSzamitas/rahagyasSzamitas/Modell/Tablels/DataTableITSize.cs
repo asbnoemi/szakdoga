@@ -10,7 +10,7 @@ using rahagyasSzamitas.Modell.Tablels;
 
 namespace rahagyasSzamitas.Modell.Tablels
 {   
-    public class TableData: IData
+    public class DataTableITSize: IData
     {
         
         public int sizeRangeMin { get; set; }
@@ -20,7 +20,7 @@ namespace rahagyasSzamitas.Modell.Tablels
         
         public void Parse(List <string> line)
         {
-            List<TableData> TableDatas = new List<TableData>();
+            List<DataTableITSize> TableDatas = new List<DataTableITSize>();
 
             if (line.Count != 4) throw new ArgumentException("hibás beérkezö adat");
             if (!int.TryParse(line[0].Trim(), out var sizeRangeMin));

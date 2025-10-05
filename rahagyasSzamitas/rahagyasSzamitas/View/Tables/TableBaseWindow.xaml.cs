@@ -26,8 +26,8 @@ namespace rahagyasSzamitas.View.Tables
         public TableBaseWindow()
         {
             InitializeComponent();
-            DataArrange<TableData> l = new DataArrange<TableData>();
-          var Dislist   = new DataArrange<TableData>().GetAll("lis", "atlagos_feluleti_erdessgek_listas.csv");
+            DataArrange<DataTableITSize> l = new DataArrange<DataTableITSize>();
+          var Dislist   = new DataArrange<DataTableITSize>().GetAll("lis", "atlagos_feluleti_erdessgek_listas.csv");
         
         
           dataTable.ItemsSource = Dislist;
