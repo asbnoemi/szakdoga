@@ -1,12 +1,119 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\rahagyasSzamitas\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BD733B04-009D-4963-BC43-14FF19A0A7B9}|rahagyasSzamitas\\rahagyasSzamitas.csproj|c:\\users\\asbot\\desktop\\szakdoga\\szakdoga\\rahagyasszamitas\\rahagyasszamitas\\view\\mdulmainview\\resultwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD733B04-009D-4963-BC43-14FF19A0A7B9}|rahagyasSzamitas\\rahagyasSzamitas.csproj|solutionrelative:rahagyasszamitas\\view\\mdulmainview\\resultwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD733B04-009D-4963-BC43-14FF19A0A7B9}|rahagyasSzamitas\\rahagyasSzamitas.csproj|c:\\users\\asbot\\desktop\\szakdoga\\szakdoga\\rahagyasszamitas\\rahagyasszamitas\\view\\mdulmainview\\resultwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BD733B04-009D-4963-BC43-14FF19A0A7B9}|rahagyasSzamitas\\rahagyasSzamitas.csproj|solutionrelative:rahagyasszamitas\\view\\mdulmainview\\resultwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD733B04-009D-4963-BC43-14FF19A0A7B9}|rahagyasSzamitas\\rahagyasSzamitas.csproj|c:\\users\\asbot\\desktop\\szakdoga\\szakdoga\\rahagyasszamitas\\rahagyasszamitas\\view\\mdulmainview\\usercontrolmain.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD733B04-009D-4963-BC43-14FF19A0A7B9}|rahagyasSzamitas\\rahagyasSzamitas.csproj|solutionrelative:rahagyasszamitas\\view\\mdulmainview\\usercontrolmain.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD733B04-009D-4963-BC43-14FF19A0A7B9}|rahagyasSzamitas\\rahagyasSzamitas.csproj|c:\\users\\asbot\\desktop\\szakdoga\\szakdoga\\rahagyasszamitas\\rahagyasszamitas\\view\\mdulmainview\\usercontrolmain.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BD733B04-009D-4963-BC43-14FF19A0A7B9}|rahagyasSzamitas\\rahagyasSzamitas.csproj|solutionrelative:rahagyasszamitas\\view\\mdulmainview\\usercontrolmain.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD733B04-009D-4963-BC43-14FF19A0A7B9}|rahagyasSzamitas\\rahagyasSzamitas.csproj|c:\\users\\asbot\\desktop\\szakdoga\\szakdoga\\rahagyasszamitas\\rahagyasszamitas\\modell\\modulmain\\calculation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD733B04-009D-4963-BC43-14FF19A0A7B9}|rahagyasSzamitas\\rahagyasSzamitas.csproj|solutionrelative:rahagyasszamitas\\modell\\modulmain\\calculation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD733B04-009D-4963-BC43-14FF19A0A7B9}|rahagyasSzamitas\\rahagyasSzamitas.csproj|c:\\users\\asbot\\desktop\\szakdoga\\szakdoga\\rahagyasszamitas\\rahagyasszamitas\\view\\tables\\tablebasewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BD733B04-009D-4963-BC43-14FF19A0A7B9}|rahagyasSzamitas\\rahagyasSzamitas.csproj|solutionrelative:rahagyasszamitas\\view\\tables\\tablebasewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ResultWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\rahagyasSzamitas\\rahagyasSzamitas\\View\\MdulMainView\\ResultWindow.xaml.cs",
+              "RelativeDocumentMoniker": "rahagyasSzamitas\\View\\MdulMainView\\ResultWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\rahagyasSzamitas\\rahagyasSzamitas\\View\\MdulMainView\\ResultWindow.xaml.cs",
+              "RelativeToolTip": "rahagyasSzamitas\\View\\MdulMainView\\ResultWindow.xaml.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAiwB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-08T11:12:13.452Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ResultWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\rahagyasSzamitas\\rahagyasSzamitas\\View\\MdulMainView\\ResultWindow.xaml",
+              "RelativeDocumentMoniker": "rahagyasSzamitas\\View\\MdulMainView\\ResultWindow.xaml",
+              "ToolTip": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\rahagyasSzamitas\\rahagyasSzamitas\\View\\MdulMainView\\ResultWindow.xaml",
+              "RelativeToolTip": "rahagyasSzamitas\\View\\MdulMainView\\ResultWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-08T11:11:51.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Calculation.cs",
+              "DocumentMoniker": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\rahagyasSzamitas\\rahagyasSzamitas\\Modell\\ModulMain\\Calculation.cs",
+              "RelativeDocumentMoniker": "rahagyasSzamitas\\Modell\\ModulMain\\Calculation.cs",
+              "ToolTip": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\rahagyasSzamitas\\rahagyasSzamitas\\Modell\\ModulMain\\Calculation.cs",
+              "RelativeToolTip": "rahagyasSzamitas\\Modell\\ModulMain\\Calculation.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAUwCsAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-08T11:07:16.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserControlmain.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\rahagyasSzamitas\\rahagyasSzamitas\\View\\MdulMainView\\UserControlmain.xaml.cs",
+              "RelativeDocumentMoniker": "rahagyasSzamitas\\View\\MdulMainView\\UserControlmain.xaml.cs",
+              "ToolTip": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\rahagyasSzamitas\\rahagyasSzamitas\\View\\MdulMainView\\UserControlmain.xaml.cs",
+              "RelativeToolTip": "rahagyasSzamitas\\View\\MdulMainView\\UserControlmain.xaml.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAArwFUAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-08T11:06:59.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserControlmain.xaml",
+              "DocumentMoniker": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\rahagyasSzamitas\\rahagyasSzamitas\\View\\MdulMainView\\UserControlmain.xaml",
+              "RelativeDocumentMoniker": "rahagyasSzamitas\\View\\MdulMainView\\UserControlmain.xaml",
+              "ToolTip": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\rahagyasSzamitas\\rahagyasSzamitas\\View\\MdulMainView\\UserControlmain.xaml",
+              "RelativeToolTip": "rahagyasSzamitas\\View\\MdulMainView\\UserControlmain.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-08T11:06:46.957Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TableBaseWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\rahagyasSzamitas\\rahagyasSzamitas\\View\\Tables\\TableBaseWindow.xaml",
+              "RelativeDocumentMoniker": "rahagyasSzamitas\\View\\Tables\\TableBaseWindow.xaml",
+              "ToolTip": "C:\\Users\\asbot\\Desktop\\szakdoga\\szakdoga\\rahagyasSzamitas\\rahagyasSzamitas\\View\\Tables\\TableBaseWindow.xaml",
+              "RelativeToolTip": "rahagyasSzamitas\\View\\Tables\\TableBaseWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-08T11:06:42.151Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

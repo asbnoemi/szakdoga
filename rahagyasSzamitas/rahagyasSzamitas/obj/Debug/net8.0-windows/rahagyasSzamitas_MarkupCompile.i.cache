@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
 C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\App.xaml
-4-1834615973
+5-1280123990
 
-21716120812
+22-935404140
 198347540315
-MainWindow.xaml;View\MdulMainView\UserControlmain.xaml;View\Tables\TableBaseWindow.xaml;View\Tables\Tablechoice.xaml;
+MainWindow.xaml;View\MdulMainView\ResultWindow.xaml;View\MdulMainView\UserControlmain.xaml;View\Tables\TableBaseWindow.xaml;View\Tables\Tablechoice.xaml;
 
-True
+False
 

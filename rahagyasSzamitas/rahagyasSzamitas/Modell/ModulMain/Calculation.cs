@@ -4,6 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using rahagyasSzamitas.Modell.Tablels;
 
 namespace rahagyasSzamitas.Modell.ModulMain
 {
@@ -40,7 +41,7 @@ namespace rahagyasSzamitas.Modell.ModulMain
         }
         private double[] CalculationR(int i, Calculation actual)
         {
-            int q = 0;// IT szám alapján keresni kell kis táblázatban
+            int q = 0 ;// IT szám alapján keresni kell kis táblázatban
             double[] R = new double[2];
             R[0] = 2 * 4 * q * i;
             R[1] = q * i;

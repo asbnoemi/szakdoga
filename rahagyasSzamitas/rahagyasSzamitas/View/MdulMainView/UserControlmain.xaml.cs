@@ -16,6 +16,8 @@ using rahagyasSzamitas.Modell.Tablels;
 using rahagyasSzamitas.View.Tables;
 using rahagyasSzamitas.View;
 using rahagyasSzamitas.Modell;
+using rahagyasSzamitas.Modell.ModulMain;
+using rahagyasSzamitas.View.MdulMainView;
 
 
 namespace rahagyasSzamitas
@@ -78,9 +80,13 @@ namespace rahagyasSzamitas
 
         private void szmBT_Click(object sender, RoutedEventArgs e)
         {
-            ///TableBaseWindow tableBaseWindow = new TableBaseWindow();
-            Tablechoice tablechoice = new Tablechoice();
-            tablechoice.ShowDialog();
+            ResultWindow resultWindow = new ResultWindow();
+            if(RBchoose.IsChecked==true)
+            {
+                resultWindow.ShowDialog(texBoxSize.Text,texBoxRou.Text );
+            }
+            
+            
         }
 
         

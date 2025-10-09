@@ -24,8 +24,8 @@
         <RadioButton Name="IT15" IsEnabled="False" Visibility="Hidden" Content="IT15" HorizontalAlignment="Left" Margin="243,178,0,0" VerticalAlignment="Top" Grid.Row="2"/>
         <RadioButton Name="IT16" IsEnabled="False" Visibility="Hidden" Content="IT16" HorizontalAlignment="Left" Margin="243,193,0,0" VerticalAlignment="Top" Grid.Row="2"/>
         <StackPanel  Margin="49,72,547,248" Orientation="Vertical" Grid.Row="2" >
-            <RadioButton Content="felületi érdeséget adok meg" Checked="RadioButton_Checked_1" />
-            <RadioButton Content="IT számot választok" Checked="RadioButton_Checked" />
+            <RadioButton Name="RBwrite" Content="felületi érdeséget adok meg" Checked="RadioButton_Checked_1" />
+            <RadioButton Name="RBchoose" Content="IT számot választok" Checked="RadioButton_Checked" />
             <TextBox Name="texBoxRou" TextWrapping="Wrap" Text="felületi érdeség" />
         </StackPanel>
         <StackPanel Margin="49,0,556,316" Orientation="Vertical" Grid.Row="2">
