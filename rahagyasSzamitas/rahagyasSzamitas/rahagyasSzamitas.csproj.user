@@ -8,9 +8,6 @@
     <Compile Update="View\Tables\TableBaseWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="View\MdulMainView\UserControlmain.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Update="View\Tables\Tablechoice.xaml.cs">
       <SubType>Code</SubType>
     </Compile>

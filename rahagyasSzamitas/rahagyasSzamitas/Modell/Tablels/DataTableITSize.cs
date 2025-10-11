@@ -13,8 +13,8 @@ namespace rahagyasSzamitas.Modell.Tablels
     public class DataTableITSize: IData
     {
         
-        public int sizeRangeMin { get; set; }
-        public int sizeRangeMax { get; set; }
+        public double sizeRangeMin { get; set; }
+        public double sizeRangeMax { get; set; }
         public string Itnum { get; set; }
         public double size { get; set; }
         

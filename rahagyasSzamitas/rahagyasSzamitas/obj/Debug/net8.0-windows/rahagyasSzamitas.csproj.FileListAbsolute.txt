@@ -3,10 +3,7 @@ C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\bin\D
 C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\bin\Debug\net8.0-windows\rahagyasSzamitas.runtimeconfig.json
 C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\bin\Debug\net8.0-windows\rahagyasSzamitas.dll
 C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\bin\Debug\net8.0-windows\rahagyasSzamitas.pdb
-C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\obj\Debug\net8.0-windows\View\MdulMainView\UserControlmain.baml
-C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\obj\Debug\net8.0-windows\View\MdulMainView\UserControlmain.g.cs
 C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\obj\Debug\net8.0-windows\View\Tables\TableBaseWindow.g.cs
-C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
 C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\obj\Debug\net8.0-windows\rahagyasSzamitas_MarkupCompile.cache
 C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\obj\Debug\net8.0-windows\rahagyasSzamitas_MarkupCompile.lref
 C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\obj\Debug\net8.0-windows\View\Tables\TableBaseWindow.baml
@@ -27,3 +24,5 @@ C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\obj\D
 C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\bin\Debug\net8.0-windows\Modell\Tablels\atlagos_feluleti_erdessgek_listas.csv
 C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\obj\Debug\net8.0-windows\View\Tables\Tablechoice.g.cs
 C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\obj\Debug\net8.0-windows\View\Tables\Tablechoice.baml
+C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\obj\Debug\net8.0-windows\View\MdulMainView\ResultWindow.g.cs
+C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\obj\Debug\net8.0-windows\View\MdulMainView\ResultWindow.baml

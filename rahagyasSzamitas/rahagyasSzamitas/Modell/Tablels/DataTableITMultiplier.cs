@@ -8,7 +8,7 @@ namespace rahagyasSzamitas.Modell.Tablels
 {
     public class DataTableITMultiplier: IData
     {
-        public string Itnum { get; set; }   
+        public string Itnum { get; set; } = "";  
         public double Multiplier { get; set; }
         public void Parse(List<string> line)
         {

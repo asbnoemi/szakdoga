@@ -20,11 +20,11 @@ namespace rahagyasSzamitas.Modell
         }
         public List<List<string>> Data { get; private set; } = [];
 
-        public virtual void Load(string filename,string FileLocation) 
+        public virtual void Load(string filename) 
         {
             
 
-            foreach (string line in File.ReadLines(FileLocation,Encoding.UTF8))
+            foreach (string line in File.ReadLines(filename,Encoding.UTF8))
             {
                 
                 Data.Add(line.Split(';').ToList());

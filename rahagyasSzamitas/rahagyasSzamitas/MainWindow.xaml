@@ -7,9 +7,48 @@
         xmlns:uc="clr-namespace:rahagyasSzamitas"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    
-    <Grid>
-        <uc:UserControlmain />
 
+    <Grid>
+        <Grid.RowDefinitions>
+
+
+            <RowDefinition Height="93*"/>
+        </Grid.RowDefinitions>
+
+        <RadioButton Name="IT5" IsEnabled="False" Content="IT5" HorizontalAlignment="Left" Margin="333,70,0,0" VerticalAlignment="Top" Height="15" Width="35" />
+        <RadioButton Name="IT6" IsEnabled="False"  Content="IT6" HorizontalAlignment="Left" Margin="333,90,0,0" VerticalAlignment="Top" Height="15" Width="36"/>
+        <RadioButton Name="IT7" IsEnabled="False" Content="IT7" HorizontalAlignment="Left" Margin="333,110,0,0" VerticalAlignment="Top" Height="14" Width="35" />
+        <RadioButton Name="IT8" IsEnabled="False"  Content="IT8" HorizontalAlignment="Left" Margin="333,130,0,0" VerticalAlignment="Top" Height="15" Width="35"/>
+        <RadioButton Name="IT9" IsEnabled="False" Content="IT9" HorizontalAlignment="Left" Margin="333,150,0,0" VerticalAlignment="Top" Height="14" Width="36"/>
+        <RadioButton Name="IT10" IsEnabled="False" Content="IT10" HorizontalAlignment="Left" Margin="333,170,0,0" VerticalAlignment="Top" Height="15" Width="41"/>
+        <RadioButton Name="IT11" IsEnabled="False"  Content="IT11" HorizontalAlignment="Left" Margin="333,190,0,0" VerticalAlignment="Top" Height="14" Width="40"/>
+        <RadioButton Name="IT12" IsEnabled="False" Content="IT12" HorizontalAlignment="Left" Margin="332,210,0,0" VerticalAlignment="Top" Height="14" Width="41"/>
+        <RadioButton Name="IT13" IsEnabled="False" Content="IF13" HorizontalAlignment="Left" Margin="333,230,0,0" VerticalAlignment="Top" Height="15" Width="41"/>
+        <RadioButton Name="IT14" IsEnabled="False" Content="IT14" HorizontalAlignment="Left" Margin="333,250,0,0" VerticalAlignment="Top" Height="15" Width="40"/>
+        <RadioButton Name="IT15" IsEnabled="False" Content="IT15" HorizontalAlignment="Left" Margin="333,270,0,0" VerticalAlignment="Top" Height="14" Width="41"/>
+        <RadioButton Name="IT16" IsEnabled="False"  Content="IT16" HorizontalAlignment="Left" Margin="333,290,0,0" VerticalAlignment="Top" Height="16" Width="41"/>
+        <StackPanel  Margin="39,173,557,190" Orientation="Vertical" >
+            <RadioButton Name="RBwrite" Content="felületi érdeséget adok meg" Checked="RadioButton_Checked_1" />
+            <RadioButton Name="RBchoose" Content="IT számot választok" Checked="RadioButton_Checked" />
+            <TextBox Name="texBoxRou" IsEnabled="False" TextWrapping="Wrap" Text="felületi érdeség" PreviewLostKeyboardFocus="texBoxRou_PreviewLostKeyboardFocus" />
+        </StackPanel>
+        <StackPanel Margin="44,102,562,266" Orientation="Vertical">
+            <RadioButton x:Name="RBlength" Content="hoszz"  RenderTransformOrigin="0.5,0.5" Checked="RBlength_Checked" />
+            <RadioButton x:Name="RBdiameter" Content="átmérö" Checked="RBdiameter_Checked" />
+            <TextBox x:Name="texBoxSize" IsEnabled="False" TextWrapping="Wrap" Text="méret mm "  PreviewLostKeyboardFocus="texBoxSize_PreviewLostKeyboardFocus"/>
+        </StackPanel>
+        <Button x:Name="Calculate_BT" Content="számol" HorizontalAlignment="Left" Margin="39,298,0,0" VerticalAlignment="Top" Height="28" Width="82" Click="Calculate_BT_Click"/>
+        <StackPanel HorizontalAlignment="Center" Height="42" VerticalAlignment="Top" Width="800" Background="#FF62C2B7" Orientation="Horizontal">
+            <Button  Content="" Width="51">
+                <Button.Background>
+                    <ImageBrush ImageSource="/View/MdulMainView/save_icon_top_left.png"/>
+                </Button.Background>
+            </Button>
+            <Button Content="táblák modositása" Background="{x:Null}" Click="ShowTable"/>
+            <Button Content="táblák megtekintése" Background="{x:Null}" Click="ShowTable"/>
+        </StackPanel>
+        <Label x:Name="ResultBT" Content="Label" HorizontalAlignment="Left" Height="231" Margin="415,95,0,0" VerticalAlignment="Top" Width="293"/>
     </Grid>
+
+
 </Window>

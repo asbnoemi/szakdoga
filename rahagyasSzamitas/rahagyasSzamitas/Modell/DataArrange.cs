@@ -11,9 +11,9 @@ namespace rahagyasSzamitas.Modell
     {
         public List<T> Rows { get; private set; } = [];
 
-        public override void Load(string filename,string FileLocation)
+        public override void Load(string filename)
         {
-            base.Load(filename,FileLocation );
+            base.Load(filename );
             foreach (List<string> row in Data)
             {
                 IData dataClass = new T();
@@ -22,9 +22,9 @@ namespace rahagyasSzamitas.Modell
             }
         }
 
-        public List<T> GetAll(string filename, string FileLocation)
+        public List<T> GetAll(string filename )
         {
-            Load(filename, FileLocation);
+            Load(filename);
             return Rows;
         }
     }
