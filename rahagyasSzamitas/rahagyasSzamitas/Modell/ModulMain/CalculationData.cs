@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace rahagyasSzamitas.Modell.ModulMain
 {
-    public class CalculationData
+    public class CalculationData:Object
     {
         public double size { get; set; }
         public double surfaceRoughness { get; set; }

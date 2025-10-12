@@ -125,8 +125,15 @@ namespace rahagyasSzamitas
             }
             Calculation calc = new Calculation(size, surfaceRoughness, ITnum, diameter);
            CalculationData result = calc.ThisCalculations();
-            ResultBT.Content = result.ToString;
-            ResultBT.Content = calc.ToString();
+            string content = $"Méret: {result.size} mm\n" +
+                $"Felületi érdesség: {result.surfaceRoughness} μm\n" +
+                $"IT szám: {result.ITnum}\n" +
+                $"i: {Math.Round(result.i,3)} mm\n" +
+                $"R: {Math.Round(result.R[0],3)} / {Math.Round(result.R[1],3)} mm\n" +
+                $"T: {Math.Round(result.T,3)} mm\n" +
+                $"O: {Math.Round(result.O,3)} mm";
+            ResultBT.Content = content;
+            
 
         }
 
