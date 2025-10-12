@@ -124,7 +124,9 @@ namespace rahagyasSzamitas
                     break;
             }
             Calculation calc = new Calculation(size, surfaceRoughness, ITnum, diameter);
-            ResultBT.Content = calc;
+           CalculationData result = calc.ThisCalculations();
+            ResultBT.Content = result.ToString;
+            ResultBT.Content = calc.ToString();
 
         }
 

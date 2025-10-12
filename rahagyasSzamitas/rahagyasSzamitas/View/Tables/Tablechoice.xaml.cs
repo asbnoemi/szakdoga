@@ -29,12 +29,15 @@ namespace rahagyasSzamitas.View.Tables
             switch (TablesComB.Text) 
             { 
                 case "Átlagos felületi érdességek":
-                        TableBaseWindow table1 = new TableBaseWindow("atlagos_feluleti_erdessgek_listas.csv");
-                        table1.Show();
+                        TableBaseWindow table1 = new TableBaseWindow();
+                     table1.FileNameLoded("atlagos_feluleti_erdessgek_listas.csv");
+
+                    table1.Show();
                         this.Close();
                         break;
                 case "IT méretek":
-                    TableBaseWindow table2 = new TableBaseWindow("ITNum.csv");
+                    TableBaseWindow table2 = new TableBaseWindow();
+                   table2.FileNameLoded("ITNum.csv");
                     table2.Show();
                         this.Close();
                         break;

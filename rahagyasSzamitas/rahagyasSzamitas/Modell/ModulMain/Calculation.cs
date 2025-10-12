@@ -26,6 +26,7 @@ namespace rahagyasSzamitas.Modell.ModulMain
             this.diameter = diameter;
 
         }
+       
         public CalculationData ThisCalculations() 
         {
             double i=Calculationi();
@@ -54,7 +55,7 @@ namespace rahagyasSzamitas.Modell.ModulMain
         private double[] CalculationR(double i)
         {
             DataArrange<DataTableITMultiplier> tableIT = new DataArrange<DataTableITMultiplier>();
-            double q=tableIT.GetAll("ITmultiplier.csv").Find(x=>(x.Itnum==this.ITnum)).Multiplier;
+            double q=tableIT.GetAll("ITNum.csv").Find(x=>(x.Itnum==this.ITnum)).Multiplier;
             double[] R = new double[2];
             R[0] = 2 * 4 * q * i;
             R[1] = q * i;

@@ -23,17 +23,17 @@ namespace rahagyasSzamitas.View.Tables
     /// </summary>
     public partial class TableBaseWindow : Window
     {
-        public TableBaseWindow(string FileName)
+        public TableBaseWindow()
         {
             InitializeComponent();
-            DataArrange<DataTableITSize> l = new DataArrange<DataTableITSize>();
-          var Dislist   = new DataArrange<DataTableITSize>().GetAll(FileName );
-        
-        
-          dataTable.ItemsSource = Dislist;
-
-
+            
         }
+        private string FileName { get; set; }
+        public void FileNameLoded (string filename) 
+        {
+            FileName = filename;
+        }
+
 
         private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -43,6 +43,28 @@ namespace rahagyasSzamitas.View.Tables
         private void ListBox_Initialized(object sender, EventArgs e)
         {
             
+        }
+
+     
+
+        private void dataTable_Loaded_1(object sender, RoutedEventArgs e)
+        {
+            if (FileName == "atlagos_feluleti_erdessgek_listas.csv")
+            {
+                DataArrange<DataTableITSize> Datal = new DataArrange<DataTableITSize>();
+                var Dislist = new DataArrange<DataTableITSize>().GetAll(FileName);
+
+
+                dataTable.ItemsSource = Dislist;
+
+            }
+            else if (FileName == "ITNum.csv")
+            {
+                DataArrange<DataTableITMultiplier> Datal = new DataArrange<DataTableITMultiplier>();
+                var Dislist = new DataArrange<DataTableITMultiplier>().GetAll(FileName);
+                dataTable.ItemsSource = Dislist;
+            }
+
         }
     }
 }

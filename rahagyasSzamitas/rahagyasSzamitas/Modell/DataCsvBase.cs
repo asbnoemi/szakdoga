@@ -22,12 +22,18 @@ namespace rahagyasSzamitas.Modell
 
         public virtual void Load(string filename) 
         {
-            
+            bool first = true;
 
             foreach (string line in File.ReadLines(filename,Encoding.UTF8))
             {
+                if (first)
+                {
+                    Header.AddRange(line.Split(';'));
+                    first = false;
+                }
+                else
+                {Data.Add(line.Split(';').ToList()); }
                 
-                Data.Add(line.Split(';').ToList());
             }
         
         }
