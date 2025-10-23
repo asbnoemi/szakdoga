@@ -13,6 +13,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using rahagyasSzamitas.Modell.ModulMain;
+using rahagyasSzamitas.ViewModell;
 
 
 
@@ -25,9 +27,11 @@ namespace rahagyasSzamitas
     /// </summary>
     public partial class MainWindow : Window
     {
+        CalculationsEdit calculationsEdit = new CalculationsEdit();
         public MainWindow()
         {
             InitializeComponent();
+            
         }
         private void RadioButton_Checked(object sender, RoutedEventArgs e)
         {
@@ -59,81 +63,87 @@ namespace rahagyasSzamitas
 
         private void Calculate_BT_Click(object sender, RoutedEventArgs e)
         {
-            
-            string ITnum = "";
-            double surfaceRoughness = 0;
-            double size = 0;
-            double diameter = 0;
-            
-            DataArrange<DataTableITSize> tableIT = new DataArrange<DataTableITSize>();
-            switch (RBlength.IsChecked)
-                {
-                case true:
-                    if (texBoxSize.Text != "") 
-                    { size = Convert.ToDouble(texBoxSize.Text);
-                        
-                    }
-                    else MessageBox.Show("Adja meg a méretet!");
-                    break;
-                case false:
-                    if (texBoxSize.Text != "" && RBdiameter.IsChecked == true) { diameter = Convert.ToDouble(texBoxSize.Text); }
-                    else MessageBox.Show("Adja meg az átmérőt!");
-                    break;
-                default:
-                    MessageBox.Show("Válasszon az átmérö vagy a hosz megadása közül!");
-                    break;
-            }
-            switch (RBchoose.IsChecked)
-            {
-                case true:
-                    if (IT5.IsChecked == true) { ITnum="IT5"; }
-                    else if (IT6.IsChecked == true) { ITnum = "IT6"; }
-                    else if (IT7.IsChecked == true) { ITnum = "IT7"; }
-                    else if (IT8.IsChecked == true) { ITnum = "IT8"; }
-                    else if (IT9.IsChecked == true) { ITnum = "IT9"; }
-                    else if (IT10.IsChecked == true) { ITnum = "IT10"; }
-                    else if (IT11.IsChecked == true) { ITnum = "IT11"; }
-                    else if (IT12.IsChecked == true) { ITnum = "IT12"; }
-                    else if (IT13.IsChecked == true) { ITnum = "IT13"; }
-                    else if (IT14.IsChecked == true) { ITnum = "IT14"; }
-                    else if (IT15.IsChecked == true) { ITnum = "IT15"; }
-                    else if (IT16.IsChecked == true) { ITnum = "IT16"; }
-                    else MessageBox.Show("Válasszon IT számot!");
-                    
-                    double sizeForRoughness = size > 0? size:diameter ;
-                    surfaceRoughness = tableIT.GetAll("atlagos_feluleti_erdessgek_listas.csv").Find(x => ((x.Itnum == ITnum) 
-                        && (x.sizeRangeMin <= sizeForRoughness) 
-                        && (x.sizeRangeMax >= sizeForRoughness))).size;
-                    break;
-                case false:
-                    if (RBwrite.IsChecked == true)
-                    {
-                        surfaceRoughness = Convert.ToDouble(texBoxRou.Text);
-                        //vizsgáljuk h bene vane a táblázatban
+            ActualCalculate();
 
-                        ITnum = tableIT.GetAll("atlagos_feluleti_erdessgek_listas.csv").Find(x => ((x.size == surfaceRoughness)
-                            && (x.sizeRangeMin <= size)
-                            && (x.sizeRangeMax >= size))).Itnum;
+            void ActualCalculate()
+            {
+                string ITnum = "";
+                double surfaceRoughness = 0;
+                double size = 0;
+                double diameter = 0;
+
+                DataArrange<DataTableITSize> tableIT = new DataArrange<DataTableITSize>();
+                switch (RBlength.IsChecked)
+                {
+                    case true:
+                        if (texBoxSize.Text != "")
+                        {
+                            size = Convert.ToDouble(texBoxSize.Text);
+
                         }
-                    
-                    else if (texBoxRou.Text == "") MessageBox.Show("Adja meg a felületi érdességet!");
-                    
-                    break;
-                default:
-                    MessageBox.Show("Válasszon módot!");
-                    break;
+                        else MessageBox.Show("Adja meg a méretet!");
+                        break;
+                    case false:
+                        if (texBoxSize.Text != "" && RBdiameter.IsChecked == true) { diameter = Convert.ToDouble(texBoxSize.Text); }
+                        else MessageBox.Show("Adja meg az átmérőt!");
+                        break;
+                    default:
+                        MessageBox.Show("Válasszon az átmérö vagy a hosz megadása közül!");
+                        break;
+                }
+                switch (RBchoose.IsChecked)
+                {
+                    case true:
+                        if (IT5.IsChecked == true) { ITnum = "IT5"; }
+                        else if (IT6.IsChecked == true) { ITnum = "IT6"; }
+                        else if (IT7.IsChecked == true) { ITnum = "IT7"; }
+                        else if (IT8.IsChecked == true) { ITnum = "IT8"; }
+                        else if (IT9.IsChecked == true) { ITnum = "IT9"; }
+                        else if (IT10.IsChecked == true) { ITnum = "IT10"; }
+                        else if (IT11.IsChecked == true) { ITnum = "IT11"; }
+                        else if (IT12.IsChecked == true) { ITnum = "IT12"; }
+                        else if (IT13.IsChecked == true) { ITnum = "IT13"; }
+                        else if (IT14.IsChecked == true) { ITnum = "IT14"; }
+                        else if (IT15.IsChecked == true) { ITnum = "IT15"; }
+                        else if (IT16.IsChecked == true) { ITnum = "IT16"; }
+                        else MessageBox.Show("Válasszon IT számot!");
+
+                        double sizeForRoughness = size > 0 ? size : diameter;
+                        surfaceRoughness = tableIT.GetAll("atlagos_feluleti_erdessgek_listas.csv").Find(x => ((x.Itnum == ITnum)
+                            && (x.sizeRangeMin <= sizeForRoughness)
+                            && (x.sizeRangeMax >= sizeForRoughness))).size;
+
+                        break;
+                    case false:
+                        if (RBwrite.IsChecked == true)
+                        {
+                            surfaceRoughness = Convert.ToDouble(texBoxRou.Text);
+                            //vizsgáljuk h bene vane a táblázatban
+
+                            ITnum = tableIT.GetAll("atlagos_feluleti_erdessgek_listas.csv").Find(x => ((x.size == surfaceRoughness)
+                                && (x.sizeRangeMin <= size)
+                                && (x.sizeRangeMax >= size))).Itnum;
+                        }
+
+                        else if (texBoxRou.Text == "") MessageBox.Show("Adja meg a felületi érdességet!");
+
+                        break;
+                    default:
+                        MessageBox.Show("Válasszon módot!");
+                        break;
+                }
+                Calculation calc = new Calculation(size, surfaceRoughness, ITnum, diameter);
+                CalculationData result = calc.ThisCalculations();
+                steps.Me.StepList.Add(result);
+                string content = $"legyártando Méret: {result.size} mm\n" +
+                    $"Felületi érdesség: {result.surfaceRoughness} μm\n" +
+                    $"IT szám: {result.ITnum}\n" +
+                    $"türésegység:i: {result.i} mm\n" +
+                    $"R: {result.R[1]} mm\n" +
+                    $"T: {result.T} mm\n" +
+                    $"O: {result.O} mm";
+                ResultBT.Content = content;
             }
-            Calculation calc = new Calculation(size, surfaceRoughness, ITnum, diameter);
-           CalculationData result = calc.ThisCalculations();
-            string content = $"Méret: {result.size} mm\n" +
-                $"Felületi érdesség: {result.surfaceRoughness} μm\n" +
-                $"IT szám: {result.ITnum}\n" +
-                $"i: {Math.Round(result.i,3)} mm\n" +
-                $"R: {Math.Round(result.R[0],3)} / {Math.Round(result.R[1],3)} mm\n" +
-                $"T: {Math.Round(result.T,3)} mm\n" +
-                $"O: {Math.Round(result.O,3)} mm";
-            ResultBT.Content = content;
-            
 
         }
 
@@ -223,6 +233,35 @@ namespace rahagyasSzamitas
         {
             texBoxSize.Text = "";
             texBoxSize.IsEnabled = true;
+        }
+
+        private void BTnext_Click(object sender, RoutedEventArgs e)
+        {
+            
+            MessageBoxResult result = MessageBox.Show( "biztos menti ezt a lépést és ezezl számol továb?", "Megerősítés", MessageBoxButton.YesNo,MessageBoxImage.Question);
+
+            if (result == MessageBoxResult.No)
+            {
+               return;
+            }
+            int length = (texBoxSize.Text.Length)-1;
+            //radiogombok álithatoságát oldd meg!!!!!
+            texBoxSize.Text =Convert.ToString( steps.Me.StepList[0].T);
+            calculationsEdit.refres();
+
+        }
+
+        private void BTremuv_Click(object sender, RoutedEventArgs e)
+        {
+            int length = (texBoxSize.Text.Length) - 1;
+            steps.Me.StepList.RemoveAt(length);
+        }
+
+        private void BTStepsShow_Click(object sender, RoutedEventArgs e)
+        {
+            
+            calculationsEdit.Show();
+
         }
     }
 }

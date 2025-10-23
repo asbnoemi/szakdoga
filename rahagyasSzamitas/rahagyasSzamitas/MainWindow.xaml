@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:rahagyasSzamitas"
         xmlns:uc="clr-namespace:rahagyasSzamitas"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="aktuális számitási lépés" Height="450" Width="800">
 
     <Grid>
         <Grid.RowDefinitions>
@@ -46,8 +46,12 @@
             </Button>
             <Button Content="táblák modositása" Background="{x:Null}" Click="ShowTable"/>
             <Button Content="táblák megtekintése" Background="{x:Null}" Click="ShowTable"/>
+            <Button x:Name="BTStepsShow" Content="számitások megnyitása" Background="{x:Null}" Click="BTStepsShow_Click"/>
         </StackPanel>
         <Label x:Name="ResultBT" Content="Label" HorizontalAlignment="Left" Height="231" Margin="415,95,0,0" VerticalAlignment="Top" Width="293"/>
+        <Button x:Name="BTremuv" Content="visza" HorizontalAlignment="Left" Margin="39,357,0,0" VerticalAlignment="Top" Height="26" Width="41" Click="BTremuv_Click"/>
+        <Button x:Name="BTnext" Content="következö" HorizontalAlignment="Left" Margin="121,357,0,0" VerticalAlignment="Top" Click="BTnext_Click" Height="26" Width="73"/>
+        
     </Grid>
 
 

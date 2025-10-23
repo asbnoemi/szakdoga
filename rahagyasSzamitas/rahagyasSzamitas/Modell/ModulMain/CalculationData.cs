@@ -10,6 +10,7 @@ namespace rahagyasSzamitas.Modell.ModulMain
     public class CalculationData:Object
     {
         public double size { get; set; }
+        public bool sizeordirection { get; set; }
         public double surfaceRoughness { get; set; }
         public string ITnum { get; set; }
         public double i { get; set; }

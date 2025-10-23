@@ -26,3 +26,5 @@ C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\obj\D
 C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\obj\Debug\net8.0-windows\View\Tables\Tablechoice.baml
 C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\obj\Debug\net8.0-windows\View\MdulMainView\ResultWindow.g.cs
 C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\obj\Debug\net8.0-windows\View\MdulMainView\ResultWindow.baml
+C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\obj\Debug\net8.0-windows\ViewModell\CalculationsEdit.g.cs
+C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\obj\Debug\net8.0-windows\ViewModell\CalculationsEdit.baml

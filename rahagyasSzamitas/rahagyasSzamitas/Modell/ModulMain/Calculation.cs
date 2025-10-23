@@ -29,14 +29,19 @@ namespace rahagyasSzamitas.Modell.ModulMain
        
         public CalculationData ThisCalculations() 
         {
-            double i=Calculationi();
+            double i;
+            
+            
+                i = Calculationi(); 
+            
+            
             double[] R = CalculationR(i);
            double T = CalculationT(R);
               double O = CalculationOriginTolerance(T);
 
             return new CalculationData()
             {
-                size = this.size,
+                size = (this.size > 0 ? this.size : this.diameter),
                 surfaceRoughness = this.surfaceRoughness,
                 ITnum = this.ITnum,
                 i = i,
@@ -48,7 +53,7 @@ namespace rahagyasSzamitas.Modell.ModulMain
         private double Calculationi()
         {
             double i = 0;
-            i = 0.45 * Math.Cbrt(this.size > 0?this.size:this.diameter) * 0.001 * this.size;
+            i = 0.45 * Math.Cbrt(this.size > 0 ? this.size : this.diameter) +( 0.001 * (this.size > 0 ? this.size : this.diameter));
             i = i * 0.001;// mikrométer bol mm-be
             return i;
         }
@@ -64,7 +69,7 @@ namespace rahagyasSzamitas.Modell.ModulMain
         private double CalculationT( double[] R)
         {
             double T = 0;
-            T = this.size > 0?this.size:this.diameter + R[0];
+            T = (this.size > 0?this.size:this.diameter) + R[0];
             return T;
         }
         private double CalculationOriginTolerance(double T)
