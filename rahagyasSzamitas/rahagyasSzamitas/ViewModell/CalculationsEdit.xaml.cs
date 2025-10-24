@@ -1,4 +1,6 @@
-﻿using rahagyasSzamitas.Modell.ModulMain;
+﻿using Microsoft.VisualBasic;
+using rahagyasSzamitas.Modell.ModulMain;
+using rahagyasSzamitas.Modell.ModulMain;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +14,6 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using rahagyasSzamitas.Modell.ModulMain;
 
 
 namespace rahagyasSzamitas.ViewModell
@@ -44,5 +45,38 @@ namespace rahagyasSzamitas.ViewModell
                     $"O: {s.O} mm";
                 LBSteps.Items.Add(content);
             }}
+
+        private void BTshave_Click(object sender, RoutedEventArgs e)
+        {
+            TBfilename.Visibility= Visibility.Visible;
+            TBfilename.IsEnabled= true;
+            BTok.Visibility= Visibility.Visible;
+            BTok.IsEnabled= true;
+            LBsave.Visibility= Visibility.Visible;
+            TBfilename.IsEnabled= true;
+            string filename = TBfilename.Text;
+        }
+
+        private void BTok_Click(object sender, RoutedEventArgs e)
+        {
+            if (TBfilename.Text == "")
+            {
+                MessageBox.Show("Kérem adjon meg egy fájlnevet!");
+                return;
+            }
+            else
+            {
+                steps.Me.SaveAsJason(TBfilename.Text);
+                MessageBox.Show("Sikeres mentés!");
+                TBfilename.Visibility= Visibility.Hidden;
+                TBfilename.IsEnabled= false;
+                TBfilename.Text= "";
+                BTok.Visibility= Visibility.Hidden;
+                BTok.IsEnabled= false;
+                LBsave.Visibility= Visibility.Hidden;
+                TBfilename.IsEnabled= false;
+
+            }
+        }
     }
 }

@@ -94,6 +94,7 @@ namespace rahagyasSzamitas
                 switch (RBchoose.IsChecked)
                 {
                     case true:
+                        ITnum = "";
                         if (IT5.IsChecked == true) { ITnum = "IT5"; }
                         else if (IT6.IsChecked == true) { ITnum = "IT6"; }
                         else if (IT7.IsChecked == true) { ITnum = "IT7"; }
@@ -106,7 +107,7 @@ namespace rahagyasSzamitas
                         else if (IT14.IsChecked == true) { ITnum = "IT14"; }
                         else if (IT15.IsChecked == true) { ITnum = "IT15"; }
                         else if (IT16.IsChecked == true) { ITnum = "IT16"; }
-                        else MessageBox.Show("Válasszon IT számot!");
+                        else { MessageBox.Show("Válasszon IT számot!");break; }
 
                         double sizeForRoughness = size > 0 ? size : diameter;
                         surfaceRoughness = tableIT.GetAll("atlagos_feluleti_erdessgek_listas.csv").Find(x => ((x.Itnum == ITnum)

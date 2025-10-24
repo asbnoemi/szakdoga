@@ -12,8 +12,23 @@ namespace rahagyasSzamitas.Modell.ModulMain
         public static steps Me { get { if (_me == null) _me = new steps(); return _me; } }
         private steps() { }
         public List<CalculationData> StepList { get; set; } = [];
-        public void Load() { }
-        public void Save(CalculationData newstep) { }
+
+
+        
+        public void SaveAsJason( string filename)
+        {
+            string jsonString = System.Text.Json.JsonSerializer.Serialize(this.StepList);
+            System.IO.File.WriteAllText(filename, jsonString);
+        }
+       public void FindSaveFile() 
+        {
+            
+        }
+        public void LoadFromJason(string filename)
+        {
+            string jsonString = System.IO.File.ReadAllText(filename);
+            this.StepList = System.Text.Json.JsonSerializer.Deserialize<List<CalculationData>>(jsonString);
+        }
         public void Print(CalculationData newstep) { }
 
     }

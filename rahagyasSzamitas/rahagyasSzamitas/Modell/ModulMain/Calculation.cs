@@ -19,7 +19,7 @@ namespace rahagyasSzamitas.Modell.ModulMain
             if (size < 0) throw new ArgumentException("méret nem lehet negatív");
             if (surfaceRoughness < 0) throw new ArgumentException("felületi érdesség nem lehet negatív");
             if (diameter < 0) throw new ArgumentException("átmérő nem lehet negatív");
-            if (size == 0 && diameter == 0) throw new ArgumentException("méret vagy átmérő megadása kötelező");
+            if (size == 0 && diameter == 0)  throw new ArgumentException("méret vagy átmérő megadása kötelező"); 
             this.size = size;
             this.surfaceRoughness = surfaceRoughness;
             this.ITnum = ITnum;
@@ -60,7 +60,7 @@ namespace rahagyasSzamitas.Modell.ModulMain
         private double[] CalculationR(double i)
         {
             DataArrange<DataTableITMultiplier> tableIT = new DataArrange<DataTableITMultiplier>();
-            double q=tableIT.GetAll("ITNum.csv").Find(x=>(x.Itnum==this.ITnum)).Multiplier;
+            double q=tableIT.GetAll("ITNum.csv").Find(x=>(x.Itnum.Equals( this.ITnum))).Multiplier;
             double[] R = new double[2];
             R[0] = 2 * 4 * q * i;
             R[1] = q * i;
