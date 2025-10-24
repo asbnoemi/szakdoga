@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace rahagyasSzamitas.Modell.ModulMain
@@ -15,19 +17,35 @@ namespace rahagyasSzamitas.Modell.ModulMain
 
 
         
-        public void SaveAsJason( string filename)
+        public void SaveAsJason( string fileName)
         {
-            string jsonString = System.Text.Json.JsonSerializer.Serialize(this.StepList);
-            System.IO.File.WriteAllText(filename, jsonString);
-        }
-       public void FindSaveFile() 
-        {
+            var saveDir = Path.Combine(AppContext.BaseDirectory, "save");
+            Directory.CreateDirectory(saveDir);
+
             
+            string jsonString = JsonSerializer.Serialize(this.StepList);
+            
+            File.WriteAllText(Path.Combine(saveDir, fileName),jsonString);
+        }
+      
+        public List<string> FindFromJason()
+        {
+            var saveDir = Path.Combine(AppContext.BaseDirectory, "save");
+            Directory.CreateDirectory(saveDir);
+            if (!Directory.Exists(saveDir))
+            {
+                return new List<string>();
+            }
+            string[] filePaths = Directory.GetFiles(saveDir ,"*.json");  
+            
+          List<string>saveFileList  =  new  List<string>(filePaths);
+            return saveFileList;
         }
         public void LoadFromJason(string filename)
         {
-            string jsonString = System.IO.File.ReadAllText(filename);
-            this.StepList = System.Text.Json.JsonSerializer.Deserialize<List<CalculationData>>(jsonString);
+            var saveDir = Path.Combine(AppContext.BaseDirectory, "save");
+            Directory.CreateDirectory(saveDir);
+
         }
         public void Print(CalculationData newstep) { }
 

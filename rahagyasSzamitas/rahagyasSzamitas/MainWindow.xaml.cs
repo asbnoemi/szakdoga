@@ -13,8 +13,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using rahagyasSzamitas.Modell.ModulMain;
+using rahagyasSzamitas.View.MdulMainView;
 using rahagyasSzamitas.ViewModell;
+using rahagyasSzamitas.View;
 
 
 
@@ -27,7 +28,8 @@ namespace rahagyasSzamitas
     /// </summary>
     public partial class MainWindow : Window
     {
-        CalculationsEdit calculationsEdit = new CalculationsEdit();
+       CalculaiunsEdit calculationsEdit = new CalculaiunsEdit();
+        LoadSave LoadSave= new LoadSave();
         public MainWindow()
         {
             InitializeComponent();
@@ -263,6 +265,11 @@ namespace rahagyasSzamitas
             
             calculationsEdit.Show();
 
+        }
+
+        private void BTsaveOpen_Click(object sender, RoutedEventArgs e)
+        {
+            LoadSave.ShowDialog();
         }
     }
 }

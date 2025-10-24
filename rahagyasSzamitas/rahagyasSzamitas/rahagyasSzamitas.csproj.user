@@ -2,10 +2,10 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
-    <Compile Update="ViewModell\CalculationsEdit.xaml.cs">
+    <Compile Update="View\CalculaiunsEdit.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="View\MdulMainView\ResultWindow.xaml.cs">
+    <Compile Update="View\MdulMainView\LoadSave.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="View\Tables\TableBaseWindow.xaml.cs">
