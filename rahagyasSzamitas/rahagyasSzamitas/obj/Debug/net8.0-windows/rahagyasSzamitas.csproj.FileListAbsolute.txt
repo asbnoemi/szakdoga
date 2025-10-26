@@ -28,3 +28,7 @@ C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\obj\D
 C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\obj\Debug\net8.0-windows\View\CalculaiunsEdit.baml
 C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\obj\Debug\net8.0-windows\View\MdulMainView\LoadSave.g.cs
 C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\obj\Debug\net8.0-windows\View\MdulMainView\LoadSave.baml
+C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\bin\Debug\net8.0-windows\WpfMath.dll
+C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\bin\Debug\net8.0-windows\XamlMath.Shared.dll
+C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\obj\Debug\net8.0-windows\rahagyasSzamitas.csproj.AssemblyReference.cache
+C:\Users\asbot\Desktop\szakdoga\szakdoga\rahagyasSzamitas\rahagyasSzamitas\obj\Debug\net8.0-windows\rahagyas.875FB23E.Up2Date

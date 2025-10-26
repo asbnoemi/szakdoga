@@ -101,7 +101,7 @@ namespace rahagyasSzamitas.View {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/rahagyasSzamitas;V1.0.0.0;component/view/calculaiunsedit.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/rahagyasSzamitas;component/view/calculaiunsedit.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\View\CalculaiunsEdit.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

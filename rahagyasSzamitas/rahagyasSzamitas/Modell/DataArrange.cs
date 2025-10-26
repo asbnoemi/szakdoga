@@ -16,6 +16,7 @@ namespace rahagyasSzamitas.Modell
             base.Load(filename );
             foreach (List<string> row in Data)
             {
+                if (row.Count == 0) continue;
                 IData dataClass = new T();
                 dataClass.Parse(row);
                 Rows.Add((T)dataClass);
