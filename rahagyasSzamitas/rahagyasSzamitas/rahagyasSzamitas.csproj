@@ -17,6 +17,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="WpfMath" Version="2.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="View\MdulMainView\save_icon_top_left.png" />
   </ItemGroup>
 
@@ -48,10 +52,6 @@
     <None Update="Modell\Tablels\turesosztalyok_szogek.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Modell\save\" />
   </ItemGroup>
 
 </Project>

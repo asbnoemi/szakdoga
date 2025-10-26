@@ -24,10 +24,7 @@ namespace rahagyasSzamitas.View
         {
             InitializeComponent();
         }
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-            refres();
-        }
+        
         public void refres()
         {
             foreach (CalculationData s in steps.Me.StepList)
@@ -75,6 +72,18 @@ namespace rahagyasSzamitas.View
                 TBfilename.IsEnabled = false;
 
             }
+        }
+
+        private void caledit_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            e.Cancel = true;
+            this.Hide();
+
+        }
+
+        private void caledit_Loaded(object sender, RoutedEventArgs e)
+        {
+            refres();
         }
     }
 }

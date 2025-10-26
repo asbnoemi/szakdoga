@@ -1,11 +1,11 @@
-﻿<Window x:Class="rahagyasSzamitas.View.MdulMainView.LoadSave"
+﻿<Window x:Name="LodSaveWindow" x:Class="rahagyasSzamitas.View.MdulMainView.LoadSave"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:rahagyasSzamitas.View.MdulMainView"
         mc:Ignorable="d"
-        Title="LoadSave" Height="148" Width="453">
+        Title="LoadSave" Height="148" Width="453" Closing="LodSaveWindow_Closing">
     <Grid Background="#FFD49090" Margin="0,0,0,1" RenderTransformOrigin="0.502,0.708" >
         <ComboBox x:Name="CBopen" HorizontalAlignment="Left" Margin="98,55,0,0" VerticalAlignment="Top" Width="120" Background="#FFFAFAFA" Loaded="CBopen_Loaded"/>
         <Label Content="amenyiben megnyit egy projektet a jelenlegi még nem mentett adatok elvesznek!" HorizontalAlignment="Left" Margin="-2,10,0,0" VerticalAlignment="Top" Height="35" Width="443" RenderTransformOrigin="0.5,0.5"></Label>

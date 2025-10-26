@@ -1,10 +1,11 @@
-﻿using System;
+﻿using rahagyasSzamitas.Modell.Tablels;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using rahagyasSzamitas.Modell.Tablels;
+using System.Windows;
 
 namespace rahagyasSzamitas.Modell.ModulMain
 {
@@ -60,7 +61,7 @@ namespace rahagyasSzamitas.Modell.ModulMain
         private double[] CalculationR(double i)
         {
             DataArrange<DataTableITMultiplier> tableIT = new DataArrange<DataTableITMultiplier>();
-            double q=tableIT.GetAll("ITNum.csv").Find(x=>(x.Itnum.Equals( this.ITnum))).Multiplier;
+            double q=tableIT.GetAll("ITNum.csv").Find(x=>(x.Itnum.Equals(ITnum, StringComparison.InvariantCulture))).Multiplier;
             double[] R = new double[2];
             R[0] = 2 * 4 * q * i;
             R[1] = q * i;

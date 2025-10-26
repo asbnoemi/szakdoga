@@ -1,8 +1,12 @@
 ﻿using rahagyasSzamitas.Modell;
 using rahagyasSzamitas.Modell.ModulMain;
 using rahagyasSzamitas.Modell.Tablels;
+using rahagyasSzamitas.View;
+using rahagyasSzamitas.View.MdulMainView;
 using rahagyasSzamitas.View.MdulMainView;
 using rahagyasSzamitas.View.Tables;
+using rahagyasSzamitas.ViewModell;
+using System.Diagnostics;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -13,9 +17,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using rahagyasSzamitas.View.MdulMainView;
-using rahagyasSzamitas.ViewModell;
-using rahagyasSzamitas.View;
 
 
 
@@ -29,11 +30,11 @@ namespace rahagyasSzamitas
     public partial class MainWindow : Window
     {
        CalculaiunsEdit calculationsEdit = new CalculaiunsEdit();
-        LoadSave LoadSave= new LoadSave();
+        LoadSave LoadSave;
         public MainWindow()
         {
             InitializeComponent();
-            
+           LoadSave  = new LoadSave(this);
         }
         private void RadioButton_Checked(object sender, RoutedEventArgs e)
         {
@@ -57,11 +58,7 @@ namespace rahagyasSzamitas
         }
 
 
-        private void ShowTable(object sender, RoutedEventArgs e)
-        {
-            Tablechoice tablechoice = new Tablechoice();
-            tablechoice.ShowDialog();
-        }
+        
 
         private void Calculate_BT_Click(object sender, RoutedEventArgs e)
         {
@@ -135,17 +132,26 @@ namespace rahagyasSzamitas
                         MessageBox.Show("Válasszon módot!");
                         break;
                 }
-                Calculation calc = new Calculation(size, surfaceRoughness, ITnum, diameter);
-                CalculationData result = calc.ThisCalculations();
-                steps.Me.StepList.Add(result);
-                string content = $"legyártando Méret: {result.size} mm\n" +
-                    $"Felületi érdesség: {result.surfaceRoughness} μm\n" +
-                    $"IT szám: {result.ITnum}\n" +
-                    $"türésegység:i: {result.i} mm\n" +
-                    $"R: {result.R[1]} mm\n" +
-                    $"T: {result.T} mm\n" +
-                    $"O: {result.O} mm";
-                ResultBT.Content = content;
+                try 
+                {
+                    Calculation calc = new Calculation(size, surfaceRoughness, ITnum, diameter);
+                    CalculationData result = calc.ThisCalculations();
+                    steps.Me.StepList.Add(result);
+                    string content = $"legyártando Méret: {result.size} mm\n" +
+                        $"Felületi érdesség: {result.surfaceRoughness} μm\n" +
+                        $"IT szám: {result.ITnum}\n" +
+                        $"türésegység:i: {result.i} mm\n" +
+                        $"R: {result.R[1]} mm\n" +
+                        $"T: {result.T} mm\n" +
+                        $"O: {result.O} mm";
+                    ResultBT.Content = content;
+                }
+                catch (ArgumentException ae)
+                {
+                    MessageBox.Show(ae.Message);
+                    return;
+                }
+                
             }
 
         }
@@ -270,6 +276,36 @@ namespace rahagyasSzamitas
         private void BTsaveOpen_Click(object sender, RoutedEventArgs e)
         {
             LoadSave.ShowDialog();
+        }
+        public void RefreLB ()
+        {
+            CalculationData result = steps.Me.StepList[steps.Me.StepList.Count - 1];
+            string content = $"legyártando Méret: {result.size} mm\n" +
+                    $"Felületi érdesség: {result.surfaceRoughness} μm\n" +
+                    $"IT szám: {result.ITnum}\n" +
+                    $"türésegység:i: {result.i} mm\n" +
+                    $"R: {result.R[1]} mm\n" +
+                    $"T: {result.T} mm\n" +
+                    $"O: {result.O} mm";
+            ResultBT.Content = content;
+        }
+
+    
+
+        private void TableOpen_Click(object sender, RoutedEventArgs e)
+        {
+            Tablechoice tablechoice = new Tablechoice();
+            tablechoice.ShowDialog();
+        }
+
+        private void SowSave_Click(object sender, RoutedEventArgs e)
+        {
+            calculationsEdit.Show();
+            calculationsEdit.LBsave.Visibility = Visibility.Visible;
+            calculationsEdit.BTshave.Visibility = Visibility.Hidden;    
+            calculationsEdit.TBfilename.Visibility = Visibility.Visible;
+            calculationsEdit.TBfilename.IsEnabled = true;
+            calculationsEdit.BTok.Visibility = Visibility.Visible; 
         }
     }
 }

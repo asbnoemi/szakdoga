@@ -11,7 +11,7 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-
+using rahagyasSzamitas.View;
 using rahagyasSzamitas.Modell;
 using System.IO;
 
@@ -22,29 +22,42 @@ namespace rahagyasSzamitas.View.MdulMainView
     /// </summary>
     public partial class LoadSave : Window
     {
-        public LoadSave()
+        private MainWindow mainWindow;
+        public LoadSave(MainWindow MainWindow)
         {
             InitializeComponent();
+            mainWindow = MainWindow;
         }
+        
+        List<string> Files = new List<string>();
 
         private void CBopen_Loaded(object sender, RoutedEventArgs e)
         {
-            List<string> Files = new List<string>();
+            
             Files = steps.Me.FindFromJason();
             foreach (string fullPath in Files)
             {
                 string FileName = Path.GetFileName(fullPath);
                 CBopen.Items.Add(FileName);
-                CBopen.
+                
 
             }
         }
 
         private void BTOpen_Click(object sender, RoutedEventArgs e)
         {
-            string fullPath = CBopen.SelectedItem.ToString();
+            string fullPath =Files[CBopen.SelectedIndex];
 
-            steps.Me.LoadFromJason(CBopen.Text);
+            steps.Me.LoadFromJason(fullPath);
+            this.Close();
+            mainWindow.RefreLB();
+
+        }
+
+        private void LodSaveWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            e.Cancel = true;
+            this.Hide();
         }
     }
 }

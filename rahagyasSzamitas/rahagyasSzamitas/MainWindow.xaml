@@ -39,13 +39,12 @@
         </StackPanel>
         <Button x:Name="Calculate_BT" Content="számol" HorizontalAlignment="Left" Margin="39,298,0,0" VerticalAlignment="Top" Height="28" Width="82" Click="Calculate_BT_Click"/>
         <StackPanel HorizontalAlignment="Center" Height="42" VerticalAlignment="Top" Width="800" Background="#FF62C2B7" Orientation="Horizontal">
-            <Button  Content="" Width="51">
+            <Button x:Name="SowSave"  Content="" Width="51" Click="SowSave_Click">
                 <Button.Background>
                     <ImageBrush ImageSource="/View/MdulMainView/save_icon_top_left.png"/>
                 </Button.Background>
             </Button>
-            <Button Content="táblák modositása" Background="{x:Null}" Click="ShowTable"/>
-            <Button Content="táblák megtekintése" Background="{x:Null}" Click="ShowTable"/>
+            <Button x:Name="TableOpen" Content="táblák megtekintése" Background="{x:Null}" Click="TableOpen_Click"/>
             <Button x:Name="BTStepsShow" Content="számitások megnyitása" Background="{x:Null}" Click="BTStepsShow_Click"/>
             <Button x:Name="BTsaveOpen" Content="projekt megnyitása" Background="{x:Null}" Click="BTsaveOpen_Click"/>
         </StackPanel>

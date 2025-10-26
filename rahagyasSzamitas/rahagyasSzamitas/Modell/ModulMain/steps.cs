@@ -43,9 +43,8 @@ namespace rahagyasSzamitas.Modell.ModulMain
         }
         public void LoadFromJason(string filename)
         {
-            var saveDir = Path.Combine(AppContext.BaseDirectory, "save");
-            Directory.CreateDirectory(saveDir);
-
+            
+           this.StepList= JsonSerializer.Deserialize<List<CalculationData>>(File.ReadAllText( filename));
         }
         public void Print(CalculationData newstep) { }
 

@@ -5,10 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:rahagyasSzamitas.View.Tables"
         mc:Ignorable="d"
-        Title="Tablechoice" Height="226" Width="630">
-    <Grid>
-        <ComboBox x:Name="TablesComB" HorizontalAlignment="Left" Margin="44,55,0,0" VerticalAlignment="Top" Width="215" Height="28" Loaded="TablesComB_Loaded"/>
-        <Button x:Name="OpenBT" Content="megnyit" HorizontalAlignment="Center" Margin="0,46,0,0" VerticalAlignment="Top" Height="46" Width="72" Click="OpenBT_Click"/>
+        Title="Tablechoice" Height="226" Width="399">
+    <Grid Background="#FF6D9AB4">
+        <ComboBox x:Name="TablesComB" HorizontalAlignment="Left" Margin="44,55,0,0" VerticalAlignment="Top" Width="241" Height="28" Loaded="TablesComB_Loaded"/>
+        <Button x:Name="OpenBT" Content="megnyit" HorizontalAlignment="Left" Margin="190,105,0,0" VerticalAlignment="Top" Height="43" Width="72" Click="OpenBT_Click" Background="#FF20CF83"/>
+        <Button x:Name="OpenTEdit" Content="megnyit szerkesztöben" HorizontalAlignment="Left" Margin="44,105,0,0" VerticalAlignment="Top" Height="43" Width="141" Background="#FF48C9D9" Click="OpenTEdit_Click"/>
 
     </Grid>
 </Window>

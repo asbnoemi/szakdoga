@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -51,6 +52,33 @@ namespace rahagyasSzamitas.View.Tables
         {
             string [] tables = new string[] { "Átlagos felületi érdességek", "IT méretek" };
             TablesComB.ItemsSource = tables;
+        }
+
+      
+
+        private void OpenTEdit_Click(object sender, RoutedEventArgs e)
+        {
+            using Process myProcess = new Process();
+                myProcess.StartInfo.FileName = "C:\\Program Files\\Microsoft Office\\root\\Office16\\EXCEL.EXE";
+            switch (TablesComB.Text)
+            {
+                
+                case "Átlagos felületi érdességek":
+                    
+                    myProcess.StartInfo.Arguments = "atlagos_feluleti_erdessgek_listas.csv";
+                    myProcess.Start();
+                    break;
+                case "IT méretek":
+                    myProcess.StartInfo.Arguments = "ITNum.csv";
+                    myProcess.Start();
+                    break;
+                default:
+                    MessageBox.Show("Válasszon táblázatot!");
+                    break;
+            }
+            
+            
+            ;
         }
     }
 }

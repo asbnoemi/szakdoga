@@ -61,7 +61,7 @@ namespace rahagyasSzamitas.View.Tables {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/rahagyasSzamitas;component/view/tables/tablebasewindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/rahagyasSzamitas;V1.0.0.0;component/view/tables/tablebasewindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\View\Tables\TableBaseWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
