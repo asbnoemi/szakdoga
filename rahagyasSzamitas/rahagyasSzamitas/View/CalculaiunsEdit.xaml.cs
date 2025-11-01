@@ -29,10 +29,10 @@ namespace rahagyasSzamitas.View
         {
             foreach (CalculationData s in steps.Me.StepList)
             {
-                string content = $"legyártando Méret: {s.size} mm\n" +
-                    $"Felületi érdesség: {s.surfaceRoughness} μm\n" +
+                string content = $"legyártando Méret: {s.Size} mm\n" +
+                    $"Felületi érdesség: {s.SurfaceRoughness} μm\n" +
                     $"IT szám: {s.ITnum}\n" +
-                    $"türésegység:i: {s.i} mm\n" +
+                    $"türésegység:I: {s.I} mm\n" +
                     $"R: {s.R[1]} mm\n" +
                     $"T: {s.T} mm\n" +
                     $"O: {s.O} mm";

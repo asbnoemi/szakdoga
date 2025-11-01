@@ -11,20 +11,20 @@ namespace rahagyasSzamitas.Modell.ModulMain
 {
     internal class Calculation
     {
-        public double size { get; set; }
-        public double surfaceRoughness { get; set; }
+        public double Size { get; set; }
+        public double SurfaceRoughness { get; set; }
         public string ITnum { get; set; }
-        public double diameter { get; set; }
+        public double Diameter { get; set; }
         public Calculation( double size=0, double surfaceRoughness=0, string ITnum="",double diameter = 0)
         {
             if (size < 0) throw new ArgumentException("méret nem lehet negatív");
             if (surfaceRoughness < 0) throw new ArgumentException("felületi érdesség nem lehet negatív");
             if (diameter < 0) throw new ArgumentException("átmérő nem lehet negatív");
             if (size == 0 && diameter == 0)  throw new ArgumentException("méret vagy átmérő megadása kötelező"); 
-            this.size = size;
-            this.surfaceRoughness = surfaceRoughness;
+            this.Size = size;
+            this.SurfaceRoughness = surfaceRoughness;
             this.ITnum = ITnum;
-            this.diameter = diameter;
+            this.Diameter = diameter;
 
         }
        
@@ -42,10 +42,10 @@ namespace rahagyasSzamitas.Modell.ModulMain
 
             return new CalculationData()
             {
-                size = (this.size > 0 ? this.size : this.diameter),
-                surfaceRoughness = this.surfaceRoughness,
+                Size = (this.Size > 0 ? this.Size : this.Diameter),
+                SurfaceRoughness = this.SurfaceRoughness,
                 ITnum = this.ITnum,
-                i = i,
+                I = i,
                 R = R,
                 T = T,
                 O = O,
@@ -54,7 +54,7 @@ namespace rahagyasSzamitas.Modell.ModulMain
         private double Calculationi()
         {
             double i = 0;
-            i = 0.45 * Math.Cbrt(this.size > 0 ? this.size : this.diameter) +( 0.001 * (this.size > 0 ? this.size : this.diameter));
+            i = 0.45 * Math.Cbrt(this.Size > 0 ? this.Size : this.Diameter) +( 0.001 * (this.Size > 0 ? this.Size : this.Diameter));
             i = i * 0.001;// mikrométer bol mm-be
             return i;
         }
@@ -70,7 +70,7 @@ namespace rahagyasSzamitas.Modell.ModulMain
         private double CalculationT( double[] R)
         {
             double T = 0;
-            T = (this.size > 0?this.size:this.diameter) + R[0];
+            T = (this.Size > 0?this.Size:this.Diameter) + R[0];
             return T;
         }
         private double CalculationOriginTolerance(double T)

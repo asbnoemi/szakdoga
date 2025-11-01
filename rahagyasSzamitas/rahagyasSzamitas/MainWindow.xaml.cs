@@ -137,10 +137,10 @@ namespace rahagyasSzamitas
                     Calculation calc = new Calculation(size, surfaceRoughness, ITnum, diameter);
                     CalculationData result = calc.ThisCalculations();
                     steps.Me.StepList.Add(result);
-                    string content = $"legyártando Méret: {result.size} mm\n" +
-                        $"Felületi érdesség: {result.surfaceRoughness} μm\n" +
+                    string content = $"legyártando Méret: {result.Size} mm\n" +
+                        $"Felületi érdesség: {result.SurfaceRoughness} μm\n" +
                         $"IT szám: {result.ITnum}\n" +
-                        $"türésegység:i: {result.i} mm\n" +
+                        $"türésegység:I: {result.I} mm\n" +
                         $"R: {result.R[1]} mm\n" +
                         $"T: {result.T} mm\n" +
                         $"O: {result.O} mm";
@@ -280,10 +280,10 @@ namespace rahagyasSzamitas
         public void RefreLB ()
         {
             CalculationData result = steps.Me.StepList[steps.Me.StepList.Count - 1];
-            string content = $"legyártando Méret: {result.size} mm\n" +
-                    $"Felületi érdesség: {result.surfaceRoughness} μm\n" +
+            string content = $"legyártando Méret: {result.Size} mm\n" +
+                    $"Felületi érdesség: {result.SurfaceRoughness} μm\n" +
                     $"IT szám: {result.ITnum}\n" +
-                    $"türésegység:i: {result.i} mm\n" +
+                    $"türésegység:I: {result.I} mm\n" +
                     $"R: {result.R[1]} mm\n" +
                     $"T: {result.T} mm\n" +
                     $"O: {result.O} mm";
