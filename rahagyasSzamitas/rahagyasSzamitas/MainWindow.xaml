@@ -45,10 +45,10 @@
             <Button x:Name="BTStepsShow" Content="számitások megnyitása" Background="{x:Null}" Click="BTStepsShow_Click"/>
             <Button x:Name="BTsaveOpen" Content="projekt megnyitása" Background="{x:Null}" Click="BTsaveOpen_Click"/>
         </StackPanel>
-        <Label x:Name="ResultBT" Content="Label" HorizontalAlignment="Left" Height="125" Margin="435,258,0,0" VerticalAlignment="Top" Width="293"/>
+        <Label x:Name="ResultBT" Content="" HorizontalAlignment="Left" Height="125" Margin="435,258,0,0" VerticalAlignment="Top" Width="293"/>
         <Button x:Name="BTremuv" Content="visza" HorizontalAlignment="Left" Margin="39,357,0,0" VerticalAlignment="Top" Height="26" Width="41" Click="BTremuv_Click"/>
         <Button x:Name="BTnext" Content="következö" HorizontalAlignment="Left" Margin="121,357,0,0" VerticalAlignment="Top" Click="BTnext_Click" Height="26" Width="73"/>
-        <controls:FormulaControl x:Name="FCvisual" Formula="" Margin="435,77,72,196" Width="293"/>
+        <controls:FormulaControl x:Name="FCvisual" Margin="435,77,72,196" Width="293" Loaded="FCvisual_Loaded"/>
     </Grid>
 
 

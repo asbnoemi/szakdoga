@@ -1,0 +1,9 @@
+2.3 A .NET platform
+A .NET egy ingyenes, platformfüggetlen, nyílt forráskódú fejlesztői platform, amely különféle alkalmazások építésérenyújt lehetőséget.A .NET platformot úgy tervezték, hogy termelékenységet, teljesítményt, biztonságot és megbízhatóságot biztosítson. Automatikus memóriakezelést biztosít egy szemétgyűjtő (GC)keresztül. A GC és a szigorú nyelvi fordítók használata miatt típus- és memóriabiztos. egyidejűséget kínálasync/await és Task primitíveken keresztül. Számos olyan kódtárat tartalmaz, amelyek széles funkcionalitással rendelkeznek, és több operációs rendszer és chiparchitektúra teljesítményére vannak optimalizálva.[https://learn.microsoft.com/hu-hu/dotnet/core/introduction?utm_source=chatgpt.com]
+A WPF a Windows Presentation Foundation rövidítése. A .NET 3.0 szerves része, amely az asztali alkalmazások grafikus felhasználói felületének (GUI) kialakítására szolgáló, egységes alkalmazásprogramozási felület (API). A WPF elődje a Windows Forms, amely a hagyományos Windows API grafikus függvénykönyvtárának – a GDI-nek – a felügyelt továbbfejlesztésén (GDI+) alapul. Ezzel szemben a WPF a DirectXre épül, ezért alapjaiban különbözik tőle. A DirectXnek köszönhetően kihasználhatók a multimédiás lehetőségek, és ezáltal sajátos látványelemek megjelenítésére is alkalmas. A WPF esetén a megjelenítés során használhatjuk a számítógép hardvergyorsítási lehetőségeit is, vagyis a felület grafikájának számítását a CPU helyett a videokártyák processzorai (GPU) szolgálhatják ki.[https://mersz.hu/dokumentum/m289pcn__154/#m289pcn_252]
+
+-lezex
+-generalizált programozás
+-kézkönyv
+-disign parrern sinelton mvvm
+-nugetek

@@ -17,6 +17,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WpfMath.Controls;
 
 
 
@@ -145,6 +146,7 @@ namespace rahagyasSzamitas
                         $"T: {result.T} mm\n" +
                         $"O: {result.O} mm";
                     ResultBT.Content = content;
+
                 }
                 catch (ArgumentException ae)
                 {
@@ -306,6 +308,12 @@ namespace rahagyasSzamitas
             calculationsEdit.TBfilename.Visibility = Visibility.Visible;
             calculationsEdit.TBfilename.IsEnabled = true;
             calculationsEdit.BTok.Visibility = Visibility.Visible; 
+        }
+
+        private void FCvisual_Loaded(object sender, RoutedEventArgs e)
+        {
+            string conr = "\\section{Legnagyobb méret: \\textcircled{/}60}\r\n    $\\scriptstyle i=0,45\\sqrt[3]{D}+0,001D=0,45\\sqrt[3]{60}+0,00160$\\\r\n    $\\scriptstyle i=1,821\\mu m=0,001821mm$\r\n\r\n    \\section{<step>}\r\n    $\\scriptstyle T_s=q_si=400,001821mm=0,07286mm$\\\r\n    $\\scriptstyle [Fh+R{ko}]{Ts}=[60mm+2440*0,001821mm]=62,04{-0,182}$\r\n\\end{document}";
+            FormulaControl Formula = conr;
         }
     }
 }
