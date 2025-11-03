@@ -11,7 +11,7 @@
 
         <ListBox x:Name="LBSteps" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="62,85,164,42" Grid.ColumnSpan="3"/>
         <Button x:Name="BTshave" Content="mentés" HorizontalAlignment="Left" Margin="62,38,0,0" VerticalAlignment="Top" Click="BTshave_Click" Height="30" Width="66"/>
-        <Button x:Name="BTok" Visibility="Collapsed" IsEnabled="False" Content="ok" HorizontalAlignment="Left" Margin="63,38,0,0" VerticalAlignment="Top" Height="30" Width="48" Click="BTok_Click"/>
+        <Button x:Name="BTok" Visibility="Hidden" IsEnabled="False" Content="ok" HorizontalAlignment="Left" Margin="63,38,0,0" VerticalAlignment="Top" Height="30" Width="48" Click="BTok_Click"/>
         <Label x:Name="LBsave" Visibility="Collapsed" Content="Aggy meg egy filenevet!" HorizontalAlignment="Left" Margin="163,10,0,0" VerticalAlignment="Top" Width="190" Height="28" Grid.ColumnSpan="3"/>
         <TextBox x:Name="TBfilename" Visibility="Hidden" HorizontalAlignment="Left" Margin="150,38,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="158" Height="30" Grid.ColumnSpan="3"/>
 

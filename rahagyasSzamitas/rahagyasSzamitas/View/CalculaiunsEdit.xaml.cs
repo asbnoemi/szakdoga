@@ -12,6 +12,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using XamlMath.Utils;
 
 namespace rahagyasSzamitas.View
 {
@@ -27,6 +28,7 @@ namespace rahagyasSzamitas.View
         
         public void refres()
         {
+            LBSteps.Items.Clear();
             foreach (CalculationData s in steps.Me.StepList)
             {
                 string content = $"legyártando Méret: {s.Size} mm\n" +
@@ -35,13 +37,15 @@ namespace rahagyasSzamitas.View
                     $"türésegység:I: {s.I} mm\n" +
                     $"R: {s.R[1]} mm\n" +
                     $"T: {s.T} mm\n" +
-                    $"O: {s.O} mm";
+                    $"O: {s.O} mm\n" +
+                    $"Q: {s.R[2]}"; 
                 LBSteps.Items.Add(content);
             }
         }
 
         private void BTshave_Click(object sender, RoutedEventArgs e)
         {
+            BTshave.Visibility = Visibility.Hidden;
             TBfilename.Visibility = Visibility.Visible;
             TBfilename.IsEnabled = true;
             BTok.Visibility = Visibility.Visible;
@@ -60,9 +64,10 @@ namespace rahagyasSzamitas.View
             }
             else
             {
-                string FileName = TBfilename.Text + ".json";
-                steps.Me.SaveAsJason(FileName);
-                MessageBox.Show("Sikeres mentés!");
+                string FileName = TBfilename.Text;
+                string FileNameJason = FileName+ ".json";
+                steps.Me.SaveAsJason(FileNameJason);
+                
                 TBfilename.Visibility = Visibility.Hidden;
                 TBfilename.IsEnabled = false;
                 TBfilename.Text = "";
@@ -70,6 +75,19 @@ namespace rahagyasSzamitas.View
                 BTok.IsEnabled = false;
                 LBsave.Visibility = Visibility.Hidden;
                 TBfilename.IsEnabled = false;
+                Microsoft.Win32.SaveFileDialog dlg = new Microsoft.Win32.SaveFileDialog();
+                dlg.FileName = FileName; 
+                dlg.DefaultExt = ""; 
+                Nullable<bool> result = dlg.ShowDialog();
+                if (result == true)
+                {
+                    string saveFilename = dlg.FileName;
+                   
+                    string saveFileNamelatex = dlg.FileName + ".tex";
+                    steps.Me.SaveLatex(saveFileNamelatex);
+                    
+
+                }MessageBox.Show("a file mentése sikeres latex file ba!");
 
             }
         }

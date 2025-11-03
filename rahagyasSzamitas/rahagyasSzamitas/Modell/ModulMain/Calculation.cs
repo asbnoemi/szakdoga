@@ -62,9 +62,10 @@ namespace rahagyasSzamitas.Modell.ModulMain
         {
             DataArrange<DataTableITMultiplier> tableIT = new DataArrange<DataTableITMultiplier>();
             double q=tableIT.GetAll("ITNum.csv").Find(x=>(x.Itnum.Equals(ITnum, StringComparison.InvariantCulture))).Multiplier;
-            double[] R = new double[2];
+            double[] R = new double[3];
             R[0] = 2 * 4 * q * i;
             R[1] = q * i;
+            R[2] = q;
             return R;
         }
         private double CalculationT( double[] R)

@@ -15,6 +15,7 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Media.Media3D;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using WpfMath.Controls;
@@ -32,6 +33,7 @@ namespace rahagyasSzamitas
     {
        CalculaiunsEdit calculationsEdit = new CalculaiunsEdit();
         LoadSave LoadSave;
+        
         public MainWindow()
         {
             InitializeComponent();
@@ -144,9 +146,19 @@ namespace rahagyasSzamitas
                         $"türésegység:I: {result.I} mm\n" +
                         $"R: {result.R[1]} mm\n" +
                         $"T: {result.T} mm\n" +
-                        $"O: {result.O} mm";
+                        $"O: {result.O} mm\n"+
+                        $"Q: {result.R[2]}";
                     ResultBT.Content = content;
-
+                    string contents= $$""""
+               \left( \[i = 0{,}45 \cdot \sqrt[3]{D} + 0{,}001 \cdot D = 0{,}45 \cdot \sqrt[3]{{{result.Size}}} + 0{,}001 \cdot {{result.Size}}\]  
+                \[i = {{result.I * 1000}}\,\mu m = {{result.I}}\,mm\]
+                \[{{result.ITnum}}\]
+                \[Q_a={{result.R[2]}}\]
+                \[T_a = q_a \cdot i = {{result.R[2]}} \cdot {{result.I}}\,mm = {{result.R[1]}}\,mm\]  
+                \[[M + R_a] - T_a = \left[{{result.Size}}\,mm + 2 \cdot 4 \cdot {{result.R[2]}} \cdot {{result.I}}\,mm\right] = {{result.R[0]}} _{ - {{result.T}}}\])
+                \[[M + R_a] - T_a = \left[{{result.Size}}\,mm + 2 \cdot 4 \cdot {{result.R[2]}} \cdot {{result.I}}\,mm\right] = {{result.R[0]}} _{ - {{result.T}}}\])
+               """";
+                    FCvisual.Formula =content;
                 }
                 catch (ArgumentException ae)
                 {
@@ -288,8 +300,10 @@ namespace rahagyasSzamitas
                     $"türésegység:I: {result.I} mm\n" +
                     $"R: {result.R[1]} mm\n" +
                     $"T: {result.T} mm\n" +
-                    $"O: {result.O} mm";
+                    $"O: {result.O} mm\n"+
+                    $"Q: {result.R[2]}";
             ResultBT.Content = content;
+
         }
 
     
@@ -303,17 +317,12 @@ namespace rahagyasSzamitas
         private void SowSave_Click(object sender, RoutedEventArgs e)
         {
             calculationsEdit.Show();
-            calculationsEdit.LBsave.Visibility = Visibility.Visible;
-            calculationsEdit.BTshave.Visibility = Visibility.Hidden;    
+            
             calculationsEdit.TBfilename.Visibility = Visibility.Visible;
             calculationsEdit.TBfilename.IsEnabled = true;
-            calculationsEdit.BTok.Visibility = Visibility.Visible; 
+            
         }
 
-        private void FCvisual_Loaded(object sender, RoutedEventArgs e)
-        {
-            string conr = "\\section{Legnagyobb méret: \\textcircled{/}60}\r\n    $\\scriptstyle i=0,45\\sqrt[3]{D}+0,001D=0,45\\sqrt[3]{60}+0,00160$\\\r\n    $\\scriptstyle i=1,821\\mu m=0,001821mm$\r\n\r\n    \\section{<step>}\r\n    $\\scriptstyle T_s=q_si=400,001821mm=0,07286mm$\\\r\n    $\\scriptstyle [Fh+R{ko}]{Ts}=[60mm+2440*0,001821mm]=62,04{-0,182}$\r\n\\end{document}";
-            FormulaControl Formula = conr;
-        }
+        
     }
 }
