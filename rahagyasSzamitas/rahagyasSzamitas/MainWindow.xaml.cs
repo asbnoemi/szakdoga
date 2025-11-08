@@ -31,18 +31,18 @@ namespace rahagyasSzamitas
     /// </summary>
     public partial class MainWindow : Window
     {
-       CalculaiunsEdit calculationsEdit = new CalculaiunsEdit();
+        CalculaiunsEdit calculationsEdit = new CalculaiunsEdit();
         LoadSave LoadSave;
-        
+
         public MainWindow()
         {
             InitializeComponent();
-           LoadSave  = new LoadSave(this);
+            LoadSave = new LoadSave(this);
         }
         private void RadioButton_Checked(object sender, RoutedEventArgs e)
         {
 
-            
+
             IT5.IsEnabled = true;
             IT6.IsEnabled = true;
             IT7.IsEnabled = true;
@@ -61,7 +61,7 @@ namespace rahagyasSzamitas
         }
 
 
-        
+
 
         private void Calculate_BT_Click(object sender, RoutedEventArgs e)
         {
@@ -109,12 +109,12 @@ namespace rahagyasSzamitas
                         else if (IT14.IsChecked == true) { ITnum = "IT14"; }
                         else if (IT15.IsChecked == true) { ITnum = "IT15"; }
                         else if (IT16.IsChecked == true) { ITnum = "IT16"; }
-                        else { MessageBox.Show("Válasszon IT számot!");break; }
+                        else { MessageBox.Show("Válasszon IT számot!"); break; }
 
                         double sizeForRoughness = size > 0 ? size : diameter;
-                        surfaceRoughness = tableIT.GetAll("atlagos_feluleti_erdessgek_listas.csv").Find(x => ((x.Itnum == ITnum)
+                        surfaceRoughness = tableIT.GetAll("atlagos_feluleti_erdessgek_listas.csv").Find(x => (x.Itnum == ITnum)
                             && (x.sizeRangeMin <= sizeForRoughness)
-                            && (x.sizeRangeMax >= sizeForRoughness))).size;
+                            && (x.sizeRangeMax >= sizeForRoughness)).size;
 
                         break;
                     case false:
@@ -135,7 +135,7 @@ namespace rahagyasSzamitas
                         MessageBox.Show("Válasszon módot!");
                         break;
                 }
-                try 
+                try
                 {
                     Calculation calc = new Calculation(size, surfaceRoughness, ITnum, diameter);
                     CalculationData result = calc.ThisCalculations();
@@ -146,26 +146,37 @@ namespace rahagyasSzamitas
                         $"türésegység:I: {result.I} mm\n" +
                         $"R: {result.R[1]} mm\n" +
                         $"T: {result.T} mm\n" +
-                        $"O: {result.O} mm\n"+
+                        $"O: {result.O} mm\n" +
                         $"Q: {result.R[2]}";
                     ResultBT.Content = content;
-                    string contents= $$""""
-               \left( \[i = 0{,}45 \cdot \sqrt[3]{D} + 0{,}001 \cdot D = 0{,}45 \cdot \sqrt[3]{{{result.Size}}} + 0{,}001 \cdot {{result.Size}}\]  
-                \[i = {{result.I * 1000}}\,\mu m = {{result.I}}\,mm\]
-                \[{{result.ITnum}}\]
-                \[Q_a={{result.R[2]}}\]
-                \[T_a = q_a \cdot i = {{result.R[2]}} \cdot {{result.I}}\,mm = {{result.R[1]}}\,mm\]  
-                \[[M + R_a] - T_a = \left[{{result.Size}}\,mm + 2 \cdot 4 \cdot {{result.R[2]}} \cdot {{result.I}}\,mm\right] = {{result.R[0]}} _{ - {{result.T}}}\])
-                \[[M + R_a] - T_a = \left[{{result.Size}}\,mm + 2 \cdot 4 \cdot {{result.R[2]}} \cdot {{result.I}}\,mm\right] = {{result.R[0]}} _{ - {{result.T}}}\])
-               """";
-                    FCvisual.Formula =content;
+                    string contents = $$""""
+                        i = 0{,}45 \cdot \sqrt[3]{D} + 0{,}001 \cdot D = 0{,}45 \cdot \sqrt[3]{{{result.Size}}} + 0{,}001 \cdot {{result.Size}}\\
+                        i = {{result.I * 1000}},\mu m = {{result.I}},mm\\
+                        {{result.ITnum}}\\
+                        Q_a={{result.R[2]}}\\
+                        T_a = q_a \cdot i = {{result.R[2]}} \cdot {{result.I}},mm = {{result.R[1]}},mm\\
+                        [M + R_a] - Ta = \left[{{result.Size}},mm + 2 \cdot 4 \cdot {{result.R[2]}} \cdot {{result.I}},mm\right] = {{result.R[0]}} { - {{result.T}}}\\
+                        [M + R_a] - Ta = \left[{{result.Size}},mm + 2 \cdot 4 \cdot {{result.R[2]}} \cdot {{result.I}},mm\right] = {{result.R[0]}} { - {{result.T}}}
+                    """";
+
+                    /*$$""""
+                    i = 0{,}45 \cdot \sqrt[3]{D} + 0{,}001 \cdot D = 0{,}45 \cdot \sqrt[3]{{{result.Size}}} + 0{,}001 \cdot {{result.Size}}\\
+                    i = {{result.I * 1000}}\,\mu m = {{result.I}}\,mm\\
+                    {{result.ITnum}}\\
+                    Q_a={{result.R[2]}}\\
+                    T_a = q_a \cdot i = {{result.R[2]}} \cdot {{result.I}}\,mm = {{result.R[1]}}\,mm\\
+                    [M + R_a] - T_a = \left[{{result.Size}}\,mm + 2 \cdot 4 \cdot {{result.R[2]}} \cdot {{result.I}}\,mm\right] = {{result.R[0]}} _{ - {{result.T}}}\\
+                    [M + R_a] - T_a = \left[{{result.Size}}\,mm + 2 \cdot 4 \cdot {{result.R[2]}} \cdot {{result.I}}\,mm\right] = {{result.R[0]}} _{ - {{result.T}}}
+                """";*/
+                    FCvisual.Formula = contents;
+
                 }
                 catch (ArgumentException ae)
                 {
                     MessageBox.Show(ae.Message);
                     return;
                 }
-                
+
             }
 
         }
@@ -206,8 +217,8 @@ namespace rahagyasSzamitas
         {
             if (double.TryParse(texBoxSize.Text, out var result))
             {
-                if (result < 0) 
-                { 
+                if (result < 0)
+                {
                     MessageBox.Show("A méret nem lehet negatív!");
                     texBoxSize.Text = "";
                 }
@@ -217,7 +228,7 @@ namespace rahagyasSzamitas
                     texBoxSize.Text = "";
                 }
             }
-            else 
+            else
             {
                 MessageBox.Show("Csak számot adjon meg!");
                 texBoxSize.Text = "";
@@ -260,16 +271,16 @@ namespace rahagyasSzamitas
 
         private void BTnext_Click(object sender, RoutedEventArgs e)
         {
-            
-            MessageBoxResult result = MessageBox.Show( "biztos menti ezt a lépést és ezezl számol továb?", "Megerősítés", MessageBoxButton.YesNo,MessageBoxImage.Question);
+
+            MessageBoxResult result = MessageBox.Show("biztos menti ezt a lépést és ezezl számol továb?", "Megerősítés", MessageBoxButton.YesNo, MessageBoxImage.Question);
 
             if (result == MessageBoxResult.No)
             {
-               return;
+                return;
             }
-            int length = (texBoxSize.Text.Length)-1;
+            int length = (texBoxSize.Text.Length) - 1;
             //radiogombok álithatoságát oldd meg!!!!!
-            texBoxSize.Text =Convert.ToString( Steps.Me.StepList[0].T);
+            texBoxSize.Text = Convert.ToString(Steps.Me.StepList[0].T);
             calculationsEdit.refres();
 
         }
@@ -282,7 +293,7 @@ namespace rahagyasSzamitas
 
         private void BTStepsShow_Click(object sender, RoutedEventArgs e)
         {
-            
+
             calculationsEdit.Show();
 
         }
@@ -291,7 +302,7 @@ namespace rahagyasSzamitas
         {
             LoadSave.ShowDialog();
         }
-        public void RefreLB ()
+        public void RefreLB()
         {
             CalculationData result = Steps.Me.StepList[Steps.Me.StepList.Count - 1];
             string content = $"legyártando Méret: {result.Size} mm\n" +
@@ -300,13 +311,13 @@ namespace rahagyasSzamitas
                     $"türésegység:I: {result.I} mm\n" +
                     $"R: {result.R[1]} mm\n" +
                     $"T: {result.T} mm\n" +
-                    $"O: {result.O} mm\n"+
+                    $"O: {result.O} mm\n" +
                     $"Q: {result.R[2]}";
             ResultBT.Content = content;
 
         }
 
-    
+
 
         private void TableOpen_Click(object sender, RoutedEventArgs e)
         {
@@ -317,12 +328,12 @@ namespace rahagyasSzamitas
         private void SowSave_Click(object sender, RoutedEventArgs e)
         {
             calculationsEdit.Show();
-            
+
             calculationsEdit.TBfilename.Visibility = Visibility.Visible;
             calculationsEdit.TBfilename.IsEnabled = true;
-            
+
         }
 
-        
+
     }
 }
