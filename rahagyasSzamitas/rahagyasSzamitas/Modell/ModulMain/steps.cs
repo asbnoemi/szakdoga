@@ -9,15 +9,12 @@ using System.Windows.Media.Media3D;
 
 namespace rahagyasSzamitas.Modell.ModulMain
 {
-    public class steps
+    public class Steps
     {
-        static steps _me;
-        public static steps Me { get { if (_me == null) _me = new steps(); return _me; } }
-        private steps() { }
+        static Steps _me;
+        public static Steps Me { get { if (_me == null) _me = new Steps(); return _me; } }
         public List<CalculationData> StepList { get; set; } = [];
-        
-
-        
+        private Steps() { }
         public void SaveAsJason( string fileName)
         {
             var saveDir = Path.Combine(AppContext.BaseDirectory, "save");
@@ -30,19 +27,17 @@ namespace rahagyasSzamitas.Modell.ModulMain
         }
         public void SaveLatex(string filename)
         {
-            string[] content = CreateLatexstep(steps.Me.StepList[0], 0);
+            string[] content = CreateLatexstep(Steps.Me.StepList[0], 0);
             File.AppendAllText(filename, content[0]);
-            for (int i = 0; i < steps.Me.StepList.Count; i++)
+            for (int i = 0; i < Steps.Me.StepList.Count; i++)
             {
-               content = CreateLatexstep(steps.Me.StepList[i], i);
+               content = CreateLatexstep(Steps.Me.StepList[i], i);
                 File.AppendAllText(filename, content[1]);
 
             }
-           content = CreateLatexstep(steps.Me.StepList[steps.Me.StepList.Count-1], steps.Me.StepList.Count);
+           content = CreateLatexstep(Steps.Me.StepList[Steps.Me.StepList.Count-1], Steps.Me.StepList.Count);
             File.AppendAllText(filename, content[2]);
         }
-        
-
        public string[] CreateLatexstep(CalculationData Disdata,int SerialNum ) 
         {
 
@@ -70,7 +65,6 @@ namespace rahagyasSzamitas.Modell.ModulMain
             string[] content = new string[3] { contentBigSize, contentNext, contentEnd };
             return content; 
         }
-      
         public List<string> FindFromJason()
         {
             var saveDir = Path.Combine(AppContext.BaseDirectory, "save");

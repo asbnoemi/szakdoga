@@ -34,7 +34,7 @@ namespace rahagyasSzamitas.View.MdulMainView
         private void CBopen_Loaded(object sender, RoutedEventArgs e)
         {
             
-            Files = steps.Me.FindFromJason();
+            Files = Steps.Me.FindFromJason();
             foreach (string fullPath in Files)
             {
                 string FileName = Path.GetFileName(fullPath);
@@ -48,7 +48,7 @@ namespace rahagyasSzamitas.View.MdulMainView
         {
             string fullPath =Files[CBopen.SelectedIndex];
 
-            steps.Me.LoadFromJason(fullPath);
+            Steps.Me.LoadFromJason(fullPath);
             this.Close();
             mainWindow.RefreLB();
 

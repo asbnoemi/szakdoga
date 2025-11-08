@@ -139,7 +139,7 @@ namespace rahagyasSzamitas
                 {
                     Calculation calc = new Calculation(size, surfaceRoughness, ITnum, diameter);
                     CalculationData result = calc.ThisCalculations();
-                    steps.Me.StepList.Add(result);
+                    Steps.Me.StepList.Add(result);
                     string content = $"legyártando Méret: {result.Size} mm\n" +
                         $"Felületi érdesség: {result.SurfaceRoughness} μm\n" +
                         $"IT szám: {result.ITnum}\n" +
@@ -269,7 +269,7 @@ namespace rahagyasSzamitas
             }
             int length = (texBoxSize.Text.Length)-1;
             //radiogombok álithatoságát oldd meg!!!!!
-            texBoxSize.Text =Convert.ToString( steps.Me.StepList[0].T);
+            texBoxSize.Text =Convert.ToString( Steps.Me.StepList[0].T);
             calculationsEdit.refres();
 
         }
@@ -277,7 +277,7 @@ namespace rahagyasSzamitas
         private void BTremuv_Click(object sender, RoutedEventArgs e)
         {
             int length = (texBoxSize.Text.Length) - 1;
-            steps.Me.StepList.RemoveAt(length);
+            Steps.Me.StepList.RemoveAt(length);
         }
 
         private void BTStepsShow_Click(object sender, RoutedEventArgs e)
@@ -293,7 +293,7 @@ namespace rahagyasSzamitas
         }
         public void RefreLB ()
         {
-            CalculationData result = steps.Me.StepList[steps.Me.StepList.Count - 1];
+            CalculationData result = Steps.Me.StepList[Steps.Me.StepList.Count - 1];
             string content = $"legyártando Méret: {result.Size} mm\n" +
                     $"Felületi érdesség: {result.SurfaceRoughness} μm\n" +
                     $"IT szám: {result.ITnum}\n" +

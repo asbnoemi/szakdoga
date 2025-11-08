@@ -13,13 +13,7 @@ namespace rahagyasSzamitas.Modell
     {
         private string _filename;
         public List<string> Header { get; private set; } = [];
-
-        public string this[int i]
-        {
-            get => Header[i];
-        }
         public List<List<string>> Data { get; private set; } = [];
-
         public virtual void Load(string filename) 
         {
             bool first = true;
@@ -37,7 +31,6 @@ namespace rahagyasSzamitas.Modell
             }
         
         }
-        public virtual void Save() 
-        { }
+        
     }
 }

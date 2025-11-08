@@ -29,7 +29,7 @@ namespace rahagyasSzamitas.View
         public void refres()
         {
             LBSteps.Items.Clear();
-            foreach (CalculationData s in steps.Me.StepList)
+            foreach (CalculationData s in Steps.Me.StepList)
             {
                 string content = $"legyártando Méret: {s.Size} mm\n" +
                     $"Felületi érdesség: {s.SurfaceRoughness} μm\n" +
@@ -66,7 +66,7 @@ namespace rahagyasSzamitas.View
             {
                 string FileName = TBfilename.Text;
                 string FileNameJason = FileName+ ".json";
-                steps.Me.SaveAsJason(FileNameJason);
+                Steps.Me.SaveAsJason(FileNameJason);
                 
                 TBfilename.Visibility = Visibility.Hidden;
                 TBfilename.IsEnabled = false;
@@ -84,7 +84,7 @@ namespace rahagyasSzamitas.View
                     string saveFilename = dlg.FileName;
                    
                     string saveFileNamelatex = dlg.FileName + ".tex";
-                    steps.Me.SaveLatex(saveFileNamelatex);
+                    Steps.Me.SaveLatex(saveFileNamelatex);
                     
 
                 }MessageBox.Show("a file mentése sikeres latex file ba!");

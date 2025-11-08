@@ -27,7 +27,6 @@ namespace rahagyasSzamitas.Modell.ModulMain
             this.Diameter = diameter;
 
         }
-       
         public CalculationData ThisCalculations() 
         {
             double i;
