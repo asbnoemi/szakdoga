@@ -145,7 +145,7 @@ namespace rahagyasSzamitas
                         $"IT szám: {result.ITnum}\n" +
                         $"türésegység:I: {result.I} mm\n" +
                         $"R: {result.R[1]} mm\n" +
-                        $"T: {result.T} mm\n" +
+                        $"M: {result.M} mm\n" +
                         $"O: {result.O} mm\n" +
                         $"Q: {result.R[2]}";
                     ResultBT.Content = content;
@@ -155,8 +155,8 @@ namespace rahagyasSzamitas
                         {{result.ITnum}}\\
                         Q_a={{result.R[2]}}\\
                         T_a = q_a \cdot i = {{result.R[2]}} \cdot {{result.I}},mm = {{result.R[1]}},mm\\
-                        [M + R_a] - Ta = \left[{{result.Size}},mm + 2 \cdot 4 \cdot {{result.R[2]}} \cdot {{result.I}},mm\right] = {{result.R[0]}} { - {{result.T}}}\\
-                        [M + R_a] - Ta = \left[{{result.Size}},mm + 2 \cdot 4 \cdot {{result.R[2]}} \cdot {{result.I}},mm\right] = {{result.R[0]}} { - {{result.T}}}
+                        [M + R_a] - Ta = \left[{{result.Size}},mm + 2 \cdot 4 \cdot {{result.R[2]}} \cdot {{result.I}},mm\right] = {{result.R[0]}} { - {{result.M}}}\\
+                        [M + R_a] - Ta = \left[{{result.Size}},mm + 2 \cdot 4 \cdot {{result.R[2]}} \cdot {{result.I}},mm\right] = {{result.R[0]}} { - {{result.M}}}
                     """";
 
                     /*$$""""
@@ -165,8 +165,8 @@ namespace rahagyasSzamitas
                     {{result.ITnum}}\\
                     Q_a={{result.R[2]}}\\
                     T_a = q_a \cdot i = {{result.R[2]}} \cdot {{result.I}}\,mm = {{result.R[1]}}\,mm\\
-                    [M + R_a] - T_a = \left[{{result.Size}}\,mm + 2 \cdot 4 \cdot {{result.R[2]}} \cdot {{result.I}}\,mm\right] = {{result.R[0]}} _{ - {{result.T}}}\\
-                    [M + R_a] - T_a = \left[{{result.Size}}\,mm + 2 \cdot 4 \cdot {{result.R[2]}} \cdot {{result.I}}\,mm\right] = {{result.R[0]}} _{ - {{result.T}}}
+                    [M + R_a] - T_a = \left[{{result.Size}}\,mm + 2 \cdot 4 \cdot {{result.R[2]}} \cdot {{result.I}}\,mm\right] = {{result.R[0]}} _{ - {{result.M}}}\\
+                    [M + R_a] - T_a = \left[{{result.Size}}\,mm + 2 \cdot 4 \cdot {{result.R[2]}} \cdot {{result.I}}\,mm\right] = {{result.R[0]}} _{ - {{result.M}}}
                 """";*/
                     FCvisual.Formula = contents;
 
@@ -280,7 +280,7 @@ namespace rahagyasSzamitas
             }
             int length = (texBoxSize.Text.Length) - 1;
             //radiogombok álithatoságát oldd meg!!!!!
-            texBoxSize.Text = Convert.ToString(Steps.Me.StepList[0].T);
+            texBoxSize.Text = Convert.ToString(Steps.Me.StepList[0].M);
             calculationsEdit.refres();
 
         }
@@ -310,7 +310,7 @@ namespace rahagyasSzamitas
                     $"IT szám: {result.ITnum}\n" +
                     $"türésegység:I: {result.I} mm\n" +
                     $"R: {result.R[1]} mm\n" +
-                    $"T: {result.T} mm\n" +
+                    $"M: {result.M} mm\n" +
                     $"O: {result.O} mm\n" +
                     $"Q: {result.R[2]}";
             ResultBT.Content = content;

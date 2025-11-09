@@ -36,8 +36,8 @@ namespace rahagyasSzamitas.Modell.ModulMain
             
             
             double[] R = CalculationR(i);
-           double T = CalculationT(R);
-              double O = CalculationOriginTolerance(T);
+           double M = CalculationM(R);
+              double O = CalculationOriginTolerance(M);
 
             return new CalculationData()
             {
@@ -46,7 +46,7 @@ namespace rahagyasSzamitas.Modell.ModulMain
                 ITnum = this.ITnum,
                 I = i,
                 R = R,
-                T = T,
+                M = M,
                 O = O,
             };
         }
@@ -67,11 +67,11 @@ namespace rahagyasSzamitas.Modell.ModulMain
             R[2] = q;
             return R;
         }
-        private double CalculationT( double[] R)
+        private double CalculationM( double[] R)
         {
-            double T = 0;
-            T = (this.Size > 0?this.Size:this.Diameter) + R[0];
-            return T;
+            double M = 0;
+            M = (this.Size > 0?this.Size:this.Diameter) + R[0];
+            return M;
         }
         private double CalculationOriginTolerance(double T)
         {

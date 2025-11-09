@@ -15,7 +15,7 @@ namespace rahagyasSzamitas.Modell.ModulMain
         public string ITnum { get; set; }
         public double I { get; set; }
         public double[] R { get; set; } 
-        public double T { get; set; }
+        public double M { get; set; }
         public double O { get; set; }
     }
     

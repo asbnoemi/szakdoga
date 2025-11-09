@@ -52,7 +52,7 @@ namespace rahagyasSzamitas.Modell.ModulMain
                 \[{{Disdata.ITnum}}\]
                 \[Q_{{SerialNum}}={{Disdata.R[2]}}\]
                 \[T_{{SerialNum}} = q_{{SerialNum}} \cdot i = {{Disdata.R[2]}} \cdot {{Disdata.I}}\,mm = {{Disdata.R[1]}}\,mm\]  
-                \[[M + R_{{SerialNum}}] - T_{{SerialNum}} = \left[{{Disdata.Size}}\,mm + 2 \cdot 4 \cdot {{Disdata.R[2]}} \cdot {{Disdata.I}}\,mm\right] = {{Disdata.R[0]}} _{ - {{Disdata.T}}}\]
+                \[[M + R_{{SerialNum}}] - T_{{SerialNum}} = \left[{{Disdata.Size}}\,mm + 2 \cdot 4 \cdot {{Disdata.R[2]}} \cdot {{Disdata.I}}\,mm\right] = {{Disdata.R[0]}} _{ - {{Disdata.M}}}\]
                """";
             string contentEnd = $$""""
             

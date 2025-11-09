@@ -36,7 +36,7 @@ namespace rahagyasSzamitas.View
                     $"IT szám: {s.ITnum}\n" +
                     $"türésegység:I: {s.I} mm\n" +
                     $"R: {s.R[1]} mm\n" +
-                    $"T: {s.T} mm\n" +
+                    $"M: {s.M} mm\n" +
                     $"O: {s.O} mm\n" +
                     $"Q: {s.R[2]}"; 
                 LBSteps.Items.Add(content);
