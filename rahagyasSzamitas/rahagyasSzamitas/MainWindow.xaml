@@ -25,7 +25,7 @@
         <RadioButton Name="IT15" IsEnabled="False" Content="IT15" HorizontalAlignment="Left" Margin="333,270,0,0" VerticalAlignment="Top" Height="14" Width="41"/>
         <RadioButton Name="IT16" IsEnabled="False"  Content="IT16" HorizontalAlignment="Left" Margin="333,290,0,0" VerticalAlignment="Top" Height="16" Width="41"/>
         <StackPanel  Margin="39,178,1123,300"  Width="250" Height="80" Orientation="Vertical" >
-            <RadioButton x:Name="RBwrite" Content="felületi érdeséget adok meg" Checked="RadioButton_Checked_1" />
+            <RadioButton x:Name="RBwrite" Content="felületi érdeséget adok meg(mm)" Checked="RadioButton_Checked_1" />
             <RadioButton x:Name="RBchoose" Content="IT számot választok" Checked="RadioButton_Checked" />
             <TextBox x:Name="texBoxRou" IsEnabled="False" TextWrapping="Wrap" Text="felületi érdeség" PreviewLostKeyboardFocus="texBoxRou_PreviewLostKeyboardFocus" />
         </StackPanel>

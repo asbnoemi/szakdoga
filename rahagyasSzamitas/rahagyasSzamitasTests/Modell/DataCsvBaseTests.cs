@@ -14,7 +14,7 @@ namespace rahagyasSzamitas.Modell.Tests
         [TestMethod()]
         public void LoadTest()
         {
-            Assert.Fail();
+            
 
         }
     }

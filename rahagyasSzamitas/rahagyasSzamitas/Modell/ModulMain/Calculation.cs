@@ -9,7 +9,7 @@ using System.Windows;
 
 namespace rahagyasSzamitas.Modell.ModulMain
 {
-    internal class Calculation
+    public class Calculation
     {
         public double Size { get; set; }
         public double SurfaceRoughness { get; set; }

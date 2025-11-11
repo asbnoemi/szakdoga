@@ -155,19 +155,9 @@ namespace rahagyasSzamitas
                         {{result.ITnum}}\\
                         Q_a={{result.R[2]}}\\
                         T_a = q_a \cdot i = {{result.R[2]}} \cdot {{result.I}},mm = {{result.R[1]}},mm\\
-                        [M + R_a] - Ta = \left[{{result.Size}},mm + 2 \cdot 4 \cdot {{result.R[2]}} \cdot {{result.I}},mm\right] = {{result.R[0]}} { - {{result.M}}}\\
-                        [M + R_a] - Ta = \left[{{result.Size}},mm + 2 \cdot 4 \cdot {{result.R[2]}} \cdot {{result.I}},mm\right] = {{result.R[0]}} { - {{result.M}}}
+                        [M + R_a] _{- Ta} = \left[{{result.Size}},mm + 2 \cdot 4 \cdot {{result.R[2]}} \cdot {{result.I}},mm\right] = {{result.R[0]}}_{ - {{result.M}}}\\
+                        [M + R_a] _{- Ta} = \left[{{result.Size}},mm + 2 \cdot 4 \cdot {{result.R[2]}} \cdot {{result.I}},mm\right] = {{result.R[0]}}_ { - {{result.M}}}
                     """";
-
-                    /*$$""""
-                    i = 0{,}45 \cdot \sqrt[3]{D} + 0{,}001 \cdot D = 0{,}45 \cdot \sqrt[3]{{{result.Size}}} + 0{,}001 \cdot {{result.Size}}\\
-                    i = {{result.I * 1000}}\,\mu m = {{result.I}}\,mm\\
-                    {{result.ITnum}}\\
-                    Q_a={{result.R[2]}}\\
-                    T_a = q_a \cdot i = {{result.R[2]}} \cdot {{result.I}}\,mm = {{result.R[1]}}\,mm\\
-                    [M + R_a] - T_a = \left[{{result.Size}}\,mm + 2 \cdot 4 \cdot {{result.R[2]}} \cdot {{result.I}}\,mm\right] = {{result.R[0]}} _{ - {{result.M}}}\\
-                    [M + R_a] - T_a = \left[{{result.Size}}\,mm + 2 \cdot 4 \cdot {{result.R[2]}} \cdot {{result.I}}\,mm\right] = {{result.R[0]}} _{ - {{result.M}}}
-                """";*/
                     FCvisual.Formula = contents;
 
                 }

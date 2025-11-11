@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("rahagyasSzamitasTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1be19deff15c6f9a3666a030521b06fac54ff7f6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fe842eb0a002021100c8101da549775d514130da")]
 [assembly: System.Reflection.AssemblyProductAttribute("rahagyasSzamitasTests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("rahagyasSzamitasTests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
